@@ -24,8 +24,8 @@ var/
 venv/
 ENV/
 env/
-donut/
-nougat/
+/donut/
+/nougat/
 .venv/
 .env/
 
@@ -55,8 +55,10 @@ Thumbs.db
 
 # Project specific
 output/donut_results/capabilities.json
-output/**/*.json
-output/**/*.md
+output/donut/**/*.json
+output/nougat/**/*.json
+output/donut/**/*.md
+output/nougat/**/*.md
 
 # Large model files
 *.pt

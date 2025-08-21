@@ -1,0 +1,84 @@
+{
+  "image": "data/pdf_ocr_samples/10.jpg",
+  "image_name": "10.jpg",
+  "total_processing_time": 0.5856871604919434,
+  "presets_tested": 5,
+  "mode": "caption",
+  "results": [
+    {
+      "preset": "chart_analysis",
+      "prompt": "Analyze this chart or scientific diagram in detail. Describe axes, labels, units, legends, trends, and embedded text. Be comprehensive and accurate.",
+      "generation_kwargs": {
+        "max_new_tokens": 180,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "a letter is written",
+      "inference_time": 0.10241198539733887,
+      "total_tokens": 6
+    },
+    {
+      "preset": "technical_description",
+      "prompt": "Provide a technical description. Identify text, numbers, symbols, axes ranges, and structural elements. Be precise and systematic.",
+      "generation_kwargs": {
+        "max_new_tokens": 140,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.1,
+        "repetition_penalty": 1.2,
+        "early_stopping": true
+      },
+      "output_text": "the letter h is black.",
+      "inference_time": 0.1168675422668457,
+      "total_tokens": 8
+    },
+    {
+      "preset": "comprehensive_caption",
+      "prompt": "Create a comprehensive caption suitable for academic documentation. Include visible text, chart elements, data patterns, and context.",
+      "generation_kwargs": {
+        "max_new_tokens": 220,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.95,
+        "repetition_penalty": 1.25,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "a letter on a picture.",
+      "inference_time": 0.10557126998901367,
+      "total_tokens": 8
+    },
+    {
+      "preset": "structured_analysis",
+      "prompt": "Structured analysis: (1) main elements, (2) text/labels, (3) data patterns/trends, (4) overall purpose.",
+      "generation_kwargs": {
+        "max_new_tokens": 160,
+        "do_sample": true,
+        "temperature": 0.65,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "the letter h in the word \" p \".",
+      "inference_time": 0.14473199844360352,
+      "total_tokens": 12
+    },
+    {
+      "preset": "precision_focused",
+      "prompt": "Describe with high precision. Focus on exact text, numbers, symbols, and spatial relations. Avoid speculation; only observable facts.",
+      "generation_kwargs": {
+        "max_new_tokens": 120,
+        "do_sample": false,
+        "num_beams": 5,
+        "length_penalty": 1.2,
+        "repetition_penalty": 1.25,
+        "early_stopping": true
+      },
+      "output_text": "the letter h is black.",
+      "inference_time": 0.1161043643951416,
+      "total_tokens": 8
+    }
+  ]
+}

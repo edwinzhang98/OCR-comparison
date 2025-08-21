@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/3.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nA table showing the number of parameters for different models, including TapasBase, TableFormerBase, TapasLarge, and TableFormerLarge."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image is a table comparing the number of parameters in different models. The table is divided into two columns: \"Model\" and \"Number of parameters.\" There are four rows, each representing a different model.\n\n1. **TAPASBASE**:\n   - Number of parameters: 110 M\n   - Breakdown: \n     - 512 * 768 = 393,216,000\n     - Subtracting this from the total gives 340 M - 3.932 billion = 1.068 billion parameters.\n\n2. **TABLEFORMERBASE**: \n   - Parameters: 0.8 M (800 thousand)\n   - Additional parameters:\n     - Multiply 12 (number of tables) by 13 (number in each table) to get 156.\n     - Add this to the base parameters to get a total of 808 thousand parameters.\n   - Total: 8.08 million parameters.\n\n3. **TAPEASLARGE**:\n    - Total parameters: Not explicitly stated, but it is mentioned that it is larger than the base model.\n    - Parameters breakdown:\n      - 1024 * 1624 = 2,097,152,640\n      - Subtract from the base to get the total parameters for the large model.\n\n4. **TABEFORMERLARGE**: \n    - Base parameters: \n      - Parameters for TABLEFORMER are not explicitly stated but are derived from the breakdown.\n      - The total parameters are 1,028,080,064.\n\nThe table provides a detailed breakdown of the parameters for each model, showing how they are calculated and how they compare in terms of size."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe table shows the number of parameters for four different models. The first model, TAPASBASE, has 110 million parameters. The second model, TABLEFORMERBASE, has an additional 0.8 million parameters and 0.002 million parameters, resulting in a total of 111 million parameters. Similarly, the third and fourth models have 340 million and 341 million parameters, respectively."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nHere a table is presented. The table has two columns and four rows. The first column is labeled \"Model\" and contains the following entries: \"TAPAS_BASE,\" \"TABLEFORMER_BASE,\" and \"TAPA_BASE.\" The second column is titled \"Number of parameters\" and lists the following values: \"110 M,\" \"1.8 M,\" and \"-0.8 + 0.002 M.\""
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

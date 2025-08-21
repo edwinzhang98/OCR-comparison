@@ -1,0 +1,233 @@
+{
+  "image": "data/pdf_ocr_samples/17.jpg",
+  "image_name": "17.jpg",
+  "total_processing_time": 1.18910813331604,
+  "questions": [
+    "Give a brief high-level caption of the figure.",
+    "Transcribe all visible text exactly as it appears (title, labels).",
+    "What is the main title or heading?",
+    "Is there a subtitle or caption text? If yes, transcribe it.",
+    "What is the x-axis label and its unit?",
+    "What is the y-axis label and its unit?",
+    "List axis ranges and tick values for x and y.",
+    "Is the scale linear or logarithmic on each axis?",
+    "Describe the legend: categories and their color/marker mapping.",
+    "List any symbols or abbreviations and their meanings if shown.",
+    "Extract key numeric values, peaks, minima, or notable points.",
+    "Describe visible trends or relationships (rise, fall, correlation).",
+    "If an equation is shown, rewrite it as plain text.",
+    "If a table is shown, summarize its rows/columns briefly.",
+    "List units or percentages mentioned anywhere in the figure.",
+    "Note any footnotes, sources, or figure labels (A/B/C panels)."
+  ],
+  "results": [
+    {
+      "question": "Give a brief high-level caption of the figure.",
+      "output_text": "",
+      "inference_time": 0.05706596374511719,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "Transcribe all visible text exactly as it appears (title, labels).",
+      "output_text": "",
+      "inference_time": 0.08321762084960938,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "What is the main title or heading?",
+      "output_text": "entrance",
+      "inference_time": 0.08245491981506348,
+      "total_tokens": 2,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "Is there a subtitle or caption text? If yes, transcribe it.",
+      "output_text": "",
+      "inference_time": 0.05613064765930176,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "What is the x-axis label and its unit?",
+      "output_text": "at left",
+      "inference_time": 0.08614253997802734,
+      "total_tokens": 3,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "What is the y-axis label and its unit?",
+      "output_text": "front",
+      "inference_time": 0.08523058891296387,
+      "total_tokens": 2,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "List axis ranges and tick values for x and y.",
+      "output_text": "",
+      "inference_time": 0.056098222732543945,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "Is the scale linear or logarithmic on each axis?",
+      "output_text": "unanswerable",
+      "inference_time": 0.14121675491333008,
+      "total_tokens": 5,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "Describe the legend: categories and their color/marker mapping.",
+      "output_text": "",
+      "inference_time": 0.08494782447814941,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "List any symbols or abbreviations and their meanings if shown.",
+      "output_text": "",
+      "inference_time": 0.05873727798461914,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "Extract key numeric values, peaks, minima, or notable points.",
+      "output_text": "",
+      "inference_time": 0.05590534210205078,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "Describe visible trends or relationships (rise, fall, correlation).",
+      "output_text": "",
+      "inference_time": 0.08282828330993652,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "If an equation is shown, rewrite it as plain text.",
+      "output_text": "",
+      "inference_time": 0.05815911293029785,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "If a table is shown, summarize its rows/columns briefly.",
+      "output_text": "",
+      "inference_time": 0.0588221549987793,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "List units or percentages mentioned anywhere in the figure.",
+      "output_text": "",
+      "inference_time": 0.05901050567626953,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "Note any footnotes, sources, or figure labels (A/B/C panels).",
+      "output_text": "",
+      "inference_time": 0.08314037322998047,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 96,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    }
+  ]
+}

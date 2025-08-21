@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/7.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure shows a table with two columns: \"Title\" and \"Length\". The question asks which song length is the longest. The answer is \"Screwed Up\" with a length of 5:02."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image presents a query and a table related to song lengths. The query asks, \"Of all song lengths, which one is the longest?\" Below the query, there is a table with two columns: \"Title\" and \"Length.\" The table lists two songs: \"Screwed Up\" with a length of 5 minutes and 2 seconds, and \"Ghetto Queen\" with the same length."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nA table with two columns, Title and Length, and two rows, Screwed Up and Ghetto Queen. The query is \"Of all song lengths, which one is the longest?\". The answer is Screwed Up with a length of 5:02."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image is a table with two columns: \"Title\" and \"Length.\" The table contains two rows, each representing a song title and its corresponding length in minutes and seconds.\n\n- The first row has the title \"Screwed Up\" with a length of 5 minutes and 2 seconds.\n- The second row has a title \"Ghetto Queen\" with the same length of exactly 5:02.\n\nThe question at the top of the image is: \"Of all song lengths, which one is the longest?\"\n\nThe answer to the question is: Both songs, \"Screeded Up\" and the \"Ghett Queen,\" have the same longest length of precisely 5.02 minutes."
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

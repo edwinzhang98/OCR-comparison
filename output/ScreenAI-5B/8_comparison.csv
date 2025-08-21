@@ -1,0 +1,11 @@
+preset,output_text,prompt,inference_time,total_tokens,gen_do_sample,gen_early_stopping,gen_length_penalty,gen_max_new_tokens,gen_no_repeat_ngram_size,gen_num_beams,gen_repetition_penalty,gen_temperature,gen_top_p
+chart_analysis,"a photo of a table with some numbers
+","Analyze this chart or scientific diagram in detail. Describe the data, labels, axes, trends, and any text elements you can see. Focus on accuracy and completeness.",0.16134858131408691,6,True,,,800,3.0,,1.1,0.3,0.9
+technical_description,"a photo of a table showing the different types of tables
+","Provide a technical description of this image. Identify all text, numbers, symbols, and structural elements. Be precise and systematic in your analysis.",0.2179422378540039,9,False,True,1.0,600,,3.0,1.15,,
+comprehensive_caption,"a photo of a table with the following information
+","Create a comprehensive caption for this image. Include all visible text, data points, chart elements, and contextual information. Make it suitable for academic or technical documentation.",0.17334222793579102,7,True,,,1000,4.0,,1.2,0.4,0.95
+structured_analysis,"a photo of a table with numbers and text
+","Analyze this image using a structured approach: 1) Identify the main elements, 2) Describe any text or labels, 3) Note data patterns or trends, 4) Summarize the overall purpose.",0.14787650108337402,7,True,,,700,3.0,,1.1,0.5,0.9
+precision_focused,"a photo of a table showing the different types of tables
+","Describe this image with high precision. Pay special attention to exact text, numbers, symbols, and spatial relationships. Avoid speculation and focus on observable facts.",0.21486759185791016,9,False,True,1.1,500,,4.0,1.2,,

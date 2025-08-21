@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/12.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure represents the formula for the attention mechanism in a neural network, denoted as \\( \\text{Attn}(H) \\). The formula involves the softmax function applied to the dot product of the query \\( Q \\) and the key \\( K \\), scaled by the square root of the dimension \\( d_K \\) of the key. The result is then multiplied by the value \\( V \\)."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image displays a mathematical equation related to attention mechanisms in the context of machine learning or natural language processing. The equation is as follows:\n\n\\[ \\text{Attn}(H) = \\operatorname{softmax}\\left(\\frac{QK^\\top}{\\sqrt{d_K}}\\right) V \\]\n\nKey components of the equation include:\n\n1. **Attn(H)**: This represents the attention mechanism applied to the hidden state \\( H \\).\n2. **softmax**: This is a function that takes a vector as input and outputs a vector of values between 0 and 1 that sum up to 1. It is used here to normalize the attention weights.\n3. **QK**: This denotes the dot product of the query \\( Q \\) and the key \\( K \\) matrices. The dot product is scaled by the square root of the dimension \\( d_K \\) of the key matrix.\n4. **V**: This represents a vector that is multiplied by the output of the softmax function.\n\nThe equation essentially describes how attention is computed in a neural network, where the query and key matrices are used to compute attention weights that are then applied to a value matrix \\( V \\) to produce the final attention output. This mechanism allows the model to focus on specific parts of the input that are most relevant to the task at hand."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure shows a softmax function applied to the dot product of Q and K divided by the square root of dK."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image provided is a mathematical equation related to attention mechanisms in the context of machine learning or natural language processing. The equation is:\n\n\\[ \\text{Attn}(H) = \\text{smax}\\left(\\frac{QK^\\top}{\\sqrt{d_K}}\\right)V \\]\n\n### Description:\n\n1. **Axes and Units**:\n   - There are no axes or units explicitly shown in the image.\n   - The equation involves variables and operations that are typically used in linear algebra and matrix operations.\n\n2. **Labels**:\n    - \\( H \\): This represents the input or hidden state vector.\n    - Q: This is likely a query vector.\n   \\- K: This represents a key vector.\n  - V: This could be a value vector.\n- \\( d_K \\): The dimensionality of the key vector.\n\n3. **Equation Components**:\n  - The function \\( \\textit{Atten}(H)\\) is the attention mechanism applied to the input \\( H\\).\n  - \\( \\frac{K^\\text{T}}{\\sqrt{dk}} \\) is a scaled dot product between the query \\( Q \\) and the key \\( K \\).\n  \\- The softmax function is applied to this scaled product to normalize the output into a probability distribution.\n\n4. **Trends**:\n- The equation shows a typical structure for an attention mechanism, where the input is transformed through a series of operations to produce an output that reflects the relevance of different parts of the input.\n- The use of the softmax function ensures that the output values sum up to 1, making it suitable for use as weights in a weighted sum operation.\n\n### Analysis:\n- **Attention Mechanism**: This equation is central to the operation of attention mechanisms, which are used in various applications such as neural machine translation, image captioning, and other tasks requiring the model to focus on specific parts of an input.\n  \\[ \\text{(1)} \\]\n- **Mathematical Operations**: The equation uses matrix operations (dot product, transpose, and division), which are fundamental in linear transformations and are crucial for the attention process.\n  [2]\n\n### Conclusion:\nThe image presents a mathematical formulation of an attention function, which is a key component in modern neural network architectures. The attention mechanism allows the model's weights to be dynamically adjusted based on the relevance or importance of different input elements, enhancing the model’s ability to focus and learn from relevant information."
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

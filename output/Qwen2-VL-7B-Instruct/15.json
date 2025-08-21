@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/15.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure is a table comparing the performance of different models on various tasks. The columns represent different tasks (rc-gp, c-gp), and the rows represent different models (TAPASBASE, TAPAS_BASE-SAT, TABLEFORMERBASE-SO, TABLE_FORMERBASE). The values in the table represent the performance scores for each model on each task. The main trend is that the TABLE FORMERBASE model consistently outperforms the other models across all tasks."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image is a table comparing the performance of different models on various tasks. The table is divided into two main columns: the left column lists the model names, and the right column contains the performance metrics for each model on different tasks. \n\nThe models listed are:\n1. TAPASBASE\n2. TAPPASBASE-SAT\n3. TABLEFORMERBASE-SO\n4. TABLEFOMERBASE\n\nThe performance metrics are:\n- rc-gp\n- c-gp \n- gp\n- pcp\n\nFor each model, the table shows the corresponding performance metric values. For example:\n- TAPIASBASE has a performance of 57.6 on the rc gp task, 47.4 on the c gp, 64.1 on the gp, and 29.2 on the pcp task.\n- TAPPASSAT has a score of 45.2 for rc gp, but there are no values provided for the other tasks.\n- TABLEFORMERSO has a value of 60.0 for rcgp and 59.8 for gp, while TABLEFORMEBASE has 62.2 and 61.7 respectively.\n\nThe table is organized in a clear, tabular format, making it easy to compare the performance across different models and tasks."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nrc-gp, c-gp, gp, and pcp are on the x-axis and TAPASBASE, TAPAS BASE-SAT, TABLEFORMERBASE-SO, and TABLEFORMER BASE are on the y-axis."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure is a table that presents the results of various models on different tasks. The table has two main columns: the first column lists the models, and the second column lists four different tasks: rc-gp, c-gp (which is not fully visible), gp, and pcp. Each row under the models represents the performance of that model on the respective tasks.\n\n- **Models**: The models listed are:\n  - TAPASBASE\n  - TABLEFORMERBASE-SO\n  = TABLEFORMERPBASE\n\n- **Tasks**: The tasks listed are (from left to right):\n  - rc-gP\n  c-gP (partially visible)\n  gp\n  pcp\n\n- The values in the table represent the performance metrics for each model on each task. For example, TAPABASE has a score of 57.6 on the rc-ggP task, 47.4 on the c-gg task, and so on.\n\n**Trends**:\n- TABLEFORMERNBASE-S0 consistently outperforms TAPASA BASE across all tasks.\n- TABLEFOMERBASE has the highest scores across all the tasks listed.\n- The scores for the c- ggP task are not fully displayed, but it appears that the scores for this task are lower compared to the other tasks for all models listed."
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

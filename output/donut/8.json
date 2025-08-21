@@ -1,0 +1,303 @@
+{
+  "image": "data/pdf_ocr_samples/8.jpg",
+  "model_id": "naver-clova-ix/donut-base",
+  "created_at": "2025-08-20 06:51:50",
+  "results": [
+    {
+      "preset": "fast_draft",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "<s_cord-v2> et al. (2020) Eisenschlos et al . () TAPASBASE ener at. (20 ) - 0 8 42.5 e r a d i t p p p P P P N N S L A B R M K K K H WWWWWWWWWWWWWSPSPSPSSSSSSS TA BABE inter-q ue stlessnessessss s m m m = 1 31.9 ot ornm m mrm m n m mcp m m rwh m m c r wheel m m",
+      "output_json": {
+        "text_sequence": "et al. (2020) Eisenschlos et al . () TAPASBASE ener at. (20 ) - 0 8 42.5 e r a d i t p p p P P P N N S L A B R M K K K H WWWWWWWWWWWWWSPSPSPSSSSSSS TA BABE inter-q ue stlessnessessss s m m m = 1 31.9 ot ornm m mrm m n m mcp m m rwh m m c r wheel m m</s>"
+      },
+      "runtime_sec": 3.4420928955078125,
+      "num_generated_tokens": 129,
+      "error": null,
+      "timestamp": "2025-08-20 06:51:53"
+    },
+    {
+      "preset": "balanced_beam",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4,
+        "length_penalty": 0.95
+      },
+      "output_text": "<s_cord-v2> et al. (2020) Eisenschlos et al. (2021) TAPASBASE et al.(2020) (20)))) )))) TAPASE int-sq al. (202) (20)) () et al. al. (20)) (202)) ()) et al al. () () - 0.8 42.5 40.8 42.5 40.8 41.7 43.9 TA TA TA TA LABLEFORMERBASE inter-sqa et al. et al.. (202)))) ( ) () ()() () ( ) ) () ) ()",
+      "output_json": {
+        "text_sequence": "et al. (2020) Eisenschlos et al. (2021) TAPASBASE et al.(2020) (20)))) )))) TAPASE int-sq al. (202) (20)) () et al. al. (20)) (202)) ()) et al al. () () - 0.8 42.5 40.8 42.5 40.8 41.7 43.9 TA TA TA TA LABLEFORMERBASE inter-sqa et al. et al.. (202)))) ( ) () ()() () ( ) ) () ) ()</s>"
+      },
+      "runtime_sec": 3.9402761459350586,
+      "num_generated_tokens": 147,
+      "error": null,
+      "timestamp": "2025-08-20 06:51:57"
+    },
+    {
+      "preset": "long_page_strict",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "early_stopping": false,
+        "repetition_penalty": 1.12,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "<s_cord-v2> et al. (2020) Eisenschlos et al. (2021) TAPASE et al.(2020) () () ) - - TA TA TA TA BA BAE int-sq al. (20 (20) (2021) (2021)) et al. 20 20 20 20 10 10 10 10 ( ) - ) - 0 8 42.5 40.8 42.5 41.7 43.9 TAPASE inter-sqa TA TA TA LABLEPORMERBASE inter-sq TA TA TA FA LABLEFORMERBASE interes-sq a TA TA TA PASLARGE fter-sqq u TABLEFORMERMERBEBEBE inter-squ",
+      "output_json": {
+        "text_sequence": "et al. (2020) Eisenschlos et al. (2021) TAPASE et al.(2020) () () ) - - TA TA TA TA BA BAE int-sq al. (20 (20) (2021) (2021)) et al. 20 20 20 20 10 10 10 10 ( ) - ) - 0 8 42.5 40.8 42.5 41.7 43.9 TAPASE inter-sqa TA TA TA LABLEPORMERBASE inter-sq TA TA TA FA LABLEFORMERBASE interes-sq a TA TA TA PASLARGE fter-sqq u TABLEFORMERMERBEBEBE inter-squ</s>"
+      },
+      "runtime_sec": 4.158348560333252,
+      "num_generated_tokens": 159,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:02"
+    },
+    {
+      "preset": "formula_friendly",
+      "prompt": "Transcribe math as LaTeX when clear; keep original text for body.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3,
+        "length_penalty": 1.0
+      },
+      "output_text": "Transcribe math as LaTeX when clear; keep original text for body. TAPASBASE inter-s TAPASE al. (2021) TA TA TA FA FA FA TA TA ORMERBASE int-sq et al. (2017.01.11) 24. 23.6 34.4 40.8 42.5 41.7 43.9 44.8 46.7 48.8 51.5 23.6 24. 34.8 24. 33.9 49 49.9 51.3 45.5 43.4 24.8 34.4 24.4 .",
+      "output_json": {
+        "text_sequence": "TAPASBASE inter-s TAPASE al. (2021) TA TA TA FA FA FA TA TA ORMERBASE int-sq et al. (2017.01.11) 24.<unk> 23.6 34.4 40.8 42.5 41.7 43.9 44.8 46.7 48.8 51.5 23.6 24.<unk> 34.8 24.<unk> 33.9 49 49.9 51.3 45.5 43.4 24.8 34.4 24.4 .</s>"
+      },
+      "runtime_sec": 2.690974712371826,
+      "num_generated_tokens": 116,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:04"
+    },
+    {
+      "preset": "table_markdown",
+      "prompt": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 900,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text.(Herigh) | - TA BABE inter-qa enerc or at al. (2021) (2016 ) -- : ________________________________________________ TA PA S BASE inter-q a TARLEFORMERBASE inter~sqa e r TAPASBASE exceeces: et al. 20 10 3 40 8 2 m 5 6 38 35 49 4. 4 % ASMSPARE an int of the states PARKBRLESETERBREBASE 24.688285262218646505308",
+      "output_json": {
+        "text_sequence": "(Herigh) | - TA BABE inter-qa enerc or at al. (2021) (2016 ) -- : ________________________________________________ TA PA S BASE inter-q a TARLEFORMERBASE inter~sqa e r TAPASBASE exceeces: et al. 20 10 3 40 8 2 m 5 6 38 35 49 4. 4 % ASMSPARE an int of the states PARKBRLESETERBREBASE 24.688285262218646505308</s>"
+      },
+      "runtime_sec": 2.6910219192504883,
+      "num_generated_tokens": 143,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:07"
+    },
+    {
+      "preset": "page_summary",
+      "prompt": "Provide a concise one-sentence summary of the page content.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 64,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.92
+      },
+      "output_text": "Provide a concise one-sentence summary of the page content. (2) et al. (2021) e r r r r r r r r r r e e e p T T T r r r r r r r r r r r r r e r r r r r r r r r r r r r r r r r r r r r r r r r",
+      "output_json": {
+        "text_sequence": "(2) et al. (2021) e r r r r r r r r r r e e e p T T T r r r r r r r r r r r r r e r r r r r r r r r r r r r r r r r r r r r r r r r</s>"
+      },
+      "runtime_sec": 1.5615580081939697,
+      "num_generated_tokens": 80,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:09"
+    },
+    {
+      "preset": "universal_doc",
+      "prompt": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1000,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.WWWWWWWWW.PoPoPoPoR.WWW.WBoddoddoddodd.W.WB.W.V.W.PoPoW.WPPPPPPPPPpppppppp.WPppppppPPPPPPGeGeGeGeBeBeBeBeGeGeGeSoSoSoSoGeGeGeWPPPPPPPSPSPSPSPPPPPP.PPPPP.PoPoPPPPPPSPPPP.VPPPPPPPCPPPPPPPOPPPPPPRPRPRPRPPPPPPPMPMPMPMPPPPPPP,PPPPPPPPPPPppPPPP.PPPPPPHPHPHPHPPPPPPP .PPPP.pppppp pppppppp,PPPPP,PppppPPpppp.Ppppp.PPPPPS.PPPppppPP.PppPPPPPS,PPPP.WPPPP.com/PPPPPPGPGPGPGPPPPPP-PPPPP-PPPPPPMSRT.PPPP,VPPPP,PoPoPo",
+      "output_json": {
+        "text_sequence": "WWWWWWWWW.PoPoPoPoR.WWW.WBoddoddoddodd.W.WB.W.V.W.PoPoW.WPPPPPPPPPpppppppp.WPppppppPPPPPPGeGeGeGeBeBeBeBeGeGeGeSoSoSoSoGeGeGeWPPPPPPPSPSPSPSPPPPPP.PPPPP.PoPoPPPPPPSPPPP.VPPPPPPPCPPPPPPPOPPPPPPRPRPRPRPPPPPPPMPMPMPMPPPPPPP,PPPPPPPPPPPppPPPP.PPPPPPHPHPHPHPPPPPPP .PPPP.pppppp pppppppp,PPPPP,PppppPPpppp.Ppppp.PPPPPS.PPPppppPP.PppPPPPPS,PPPP.WPPPP.com/PPPPPPGPGPGPGPPPPPP-PPPPP-PPPPPPMSRT.PPPP,VPPPP,PoPoPo</s>"
+      },
+      "runtime_sec": 1.9110822677612305,
+      "num_generated_tokens": 457,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:10"
+    },
+    {
+      "preset": "router_probe",
+      "prompt": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool,  \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\",  \"table_size\": \"none|small|large\", \"confidence\": number}.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 48,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true
+      },
+      "output_text": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. ( ) - - - - - -s. ( ) -s. ( ) -s. ( ) -s. ( ) -s. ( ) -s. ( ) -s. ( ) -s. ( )",
+      "output_json": {
+        "text_sequence": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. ( ) - - - - - -s. ( ) -s. ( ) -s. ( ) -s. ( ) -s. ( ) -s. ( ) -s. ( ) -s. ( )</s>"
+      },
+      "runtime_sec": 0.3387606143951416,
+      "num_generated_tokens": 154,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:11"
+    },
+    {
+      "preset": "eq_compact",
+      "prompt": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 160,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 2,
+        "repetition_penalty": 1.2,
+        "early_stopping": true
+      },
+      "output_text": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols. T T E Eisenschlos et al. (2021) TA TA BA BA .8 51.5 23.6 34.4 24. 34.8 42.5 34.5 40.2 21.7 43.9 45. 41.7 44.6.5 48.4 515.02021.",
+      "output_json": {
+        "text_sequence": "T T E Eisenschlos et al. (2021) TA TA BA BA .8 51.5 23.6 34.4 24.<unk> 34.8 42.5 34.5 40.2 21.7 43.9 45.<unk> 41.7 44.6.5 48.4 515.02021.</s>"
+      },
+      "runtime_sec": 0.7225551605224609,
+      "num_generated_tokens": 87,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:11"
+    },
+    {
+      "preset": "table_strict_md",
+      "prompt": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 480,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize. T T T T A B B BASE et al. (2021) TA TA TA TA BA BA BA BA TA TA TA PA BA BA BABE et al. (2020) Eisenschlos et al. (4021) T T TAPA BA BA BA FA TA TA TA FA BA BA BA FORMER BEFORMER BE BEFORMER ORMER BE TA TA PA TA TA TA PER FORMER BE FORMER BE at at at at al. TA TA TA S B B B B T T T. (2020 . (2021) TARGE TA TA TA T T TEST T T T S T T T M T T T . T T. T T A T T T 0. T T F ORMER T T T P T T T F R T T T",
+      "output_json": {
+        "text_sequence": "T T T T A B B BASE et al. (2021) TA TA TA TA BA BA BA BA TA TA TA PA BA BA BABE et al. (2020) Eisenschlos et al. (4021) T T TAPA BA BA BA FA TA TA TA FA BA BA BA FORMER BEFORMER BE BEFORMER ORMER BE TA TA PA TA TA TA PER FORMER BE FORMER BE at at at at al. TA TA TA S B B B B T T T. (2020 . (2021) TARGE TA TA TA T T TEST T T T S T T T M T T T . T T. T T A T T T 0. T T F ORMER T T T P T T T F R T T T</s>"
+      },
+      "runtime_sec": 1.2206988334655762,
+      "num_generated_tokens": 196,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:13"
+    },
+    {
+      "preset": "wide_table_md",
+      "prompt": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1600,
+          "width": 1130
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.12,
+        "early_stopping": false
+      },
+      "output_text": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content. et al. (2021) Eisenschlos al. (202) TAPASBASE TA TA TA TA TRA TRA TRA TRASE FORMERBASE inter-sqa TA TA TA BA BABE inter-sq TA ORMERBASE enter-sq TARGE et al. (2020) Fisenschlos et al. et (2021) et TAPERMERBASE TA TAMERMERBASE ent orMERBASE et al. 2021) TAMERBASE in ter-s at at at at all. (2021) TA TA TAMERBBE inter-styles at at an an an an ast at at at on at at at any any any any may at at at as at at at and and and and at at atenterenterenterenters at at any may may may at any any may may at at any forMERLARGE inter-s at any may not at any any of at any any at any any forMERLANGE TAPERMERLARGE MARGE inter-style and any may may not at an an any may may and and and any may at any may at an any any any and any any may any may may any any may not any any any are any any anyonMERRMERBASE any any any you may may may may any may any any any",
+      "output_json": {
+        "text_sequence": "et al. (2021) Eisenschlos al. (202) TAPASBASE TA TA TA TA TRA TRA TRA TRASE FORMERBASE inter-sqa TA TA TA BA BABE inter-sq TA ORMERBASE enter-sq TARGE et al. (2020) Fisenschlos et al. et (2021) et TAPERMERBASE TA TAMERMERBASE ent orMERBASE et al. 2021) TAMERBASE in ter-s at at at at all. (2021) TA TA TAMERBBE inter-styles at at an an an an ast at at at on at at at any any any any may at at at as at at at and and and and at at atenterenterenterenters at at any may may may at any any may may at at any forMERLARGE inter-s at any may not at any any of at any any at any any forMERLANGE TAPERMERLARGE MARGE inter-style and any may may not at an an any may may and and and any may at any may at an any any any and any any may any may may any any may not any any any are any any anyonMERRMERBASE any any any you may may may may any may any any any</s>"
+      },
+      "runtime_sec": 1.842827558517456,
+      "num_generated_tokens": 304,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:15"
+    },
+    {
+      "preset": "figure_bullets",
+      "prompt": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 180,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9
+      },
+      "output_text": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values.E Eisenschlos et al. (202) ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||:: .: .....0.WBASE...... .20202018.0020......V....0.8..",
+      "output_json": {
+        "text_sequence": "E Eisenschlos et al. (202) ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||:: .: .....0.WBASE...... .20202018.0020......V....0.8..</s>"
+      },
+      "runtime_sec": 0.9609329700469971,
+      "num_generated_tokens": 210,
+      "error": null,
+      "timestamp": "2025-08-20 06:52:16"
+    }
+  ],
+  "presets_run": [
+    "balanced_beam",
+    "eq_compact",
+    "fast_draft",
+    "figure_bullets",
+    "formula_friendly",
+    "long_page_strict",
+    "page_summary",
+    "router_probe",
+    "table_markdown",
+    "table_strict_md",
+    "universal_doc",
+    "wide_table_md"
+  ]
+}

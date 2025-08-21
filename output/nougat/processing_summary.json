@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "processed": 18,
+    "failed": 0,
+    "total_time": 15.6237952709198
+  },
+  "results": [
+    {
+      "file": "data/pdf_ocr_samples/1.jpg",
+      "output": "data/nougat_batch_outputs/1.md",
+      "status": "success",
+      "process_time": 0.6753954887390137,
+      "text_length": 0,
+      "preview": ""
+    },
+    {
+      "file": "data/pdf_ocr_samples/10.jpg",
+      "output": "data/nougat_batch_outputs/10.md",
+      "status": "success",
+      "process_time": 0.44681620597839355,
+      "text_length": 46,
+      "preview": "\\(Q=HW^{Q},\\quad V=HW^{V},\\quad K=HW^{K}\\).\n\n "
+    },
+    {
+      "file": "data/pdf_ocr_samples/11.jpg",
+      "output": "data/nougat_batch_outputs/11.md",
+      "status": "success",
+      "process_time": 0.2093825340270996,
+      "text_length": 2,
+      "preview": "\n\n"
+    },
+    {
+      "file": "data/pdf_ocr_samples/12.jpg",
+      "output": "data/nougat_batch_outputs/12.md",
+      "status": "success",
+      "process_time": 0.35497522354125977,
+      "text_length": 40,
+      "preview": "Attn(\\(H\\)) = softmax(\\(\\sqrt{d_{K}}\\)) "
+    },
+    {
+      "file": "data/pdf_ocr_samples/13.jpg",
+      "output": "data/nougat_batch_outputs/13.md",
+      "status": "success",
+      "process_time": 3.0521793365478516,
+      "text_length": 518,
+      "preview": "\n\n\\begin{tabular}{l c c|c c} \\multicolumn{5}{c}{**Before Perturb**} & \\multicolumn{2}{c}{**After Perturb**} \\\\ \\hline  & ALL & SEQ & ALL & \\(VP\\) \\\\ \\hline TAPASbase & 61.1 & 31.3 & 57.4 & 14.0\\% \\\\ \\..."
+    },
+    {
+      "file": "data/pdf_ocr_samples/14.jpg",
+      "output": "data/nougat_batch_outputs/14.md",
+      "status": "success",
+      "process_time": 0.35017848014831543,
+      "text_length": 2,
+      "preview": "\n\n"
+    },
+    {
+      "file": "data/pdf_ocr_samples/15.jpg",
+      "output": "data/nougat_batch_outputs/15.md",
+      "status": "success",
+      "process_time": 0.12346458435058594,
+      "text_length": 0,
+      "preview": ""
+    },
+    {
+      "file": "data/pdf_ocr_samples/16.jpg",
+      "output": "data/nougat_batch_outputs/16.md",
+      "status": "success",
+      "process_time": 0.20845413208007812,
+      "text_length": 22,
+      "preview": "Attn(H) = softmax(AV) "
+    },
+    {
+      "file": "data/pdf_ocr_samples/17.jpg",
+      "output": "data/nougat_batch_outputs/17.md",
+      "status": "success",
+      "process_time": 6.082245349884033,
+      "text_length": 1003,
+      "preview": "\n\n\\begin{tabular}{l c c c|c c} \\multicolumn{5}{c}{**Before Perturb**} & \\multicolumn{2}{c}{**After Perturb**} \\\\ \\hline  & ALL & SEQ & ALL\\({}_{\\rm d}\\) & ALL & \\(VP\\) \\\\ \\hline Herzig et al. (2020) &..."
+    },
+    {
+      "file": "data/pdf_ocr_samples/18.jpg",
+      "output": "data/nougat_batch_outputs/18.md",
+      "status": "success",
+      "process_time": 0.2738218307495117,
+      "text_length": 27,
+      "preview": "\\(V\\)P = (t2f + f2t + f2f) "
+    },
+    {
+      "file": "data/pdf_ocr_samples/2.jpg",
+      "output": "data/nougat_batch_outputs/2.md",
+      "status": "success",
+      "process_time": 0.3640928268432617,
+      "text_length": 2,
+      "preview": "\n\n"
+    },
+    {
+      "file": "data/pdf_ocr_samples/3.jpg",
+      "output": "data/nougat_batch_outputs/3.md",
+      "status": "success",
+      "process_time": 1.2447209358215332,
+      "text_length": 205,
+      "preview": "Model\n\nNumber of parameters\n\nTAPASbase 110 M\n\n110 M - 2*512*768\n\nTableFormerbase + 12*12*13 =\n\n110 M - 0.8 M + 0.002 M\n\nTAPASlarge 340 M - 2*512*1024\n\nTableFormerlarge + 24*16*13 =\n\n340 M - 1.0 M + 0...."
+    },
+    {
+      "file": "data/pdf_ocr_samples/4.jpg",
+      "output": "data/nougat_batch_outputs/4.md",
+      "status": "success",
+      "process_time": 0.1829700469970703,
+      "text_length": 17,
+      "preview": "\\(\\sqrt{d_{K}}\\) "
+    },
+    {
+      "file": "data/pdf_ocr_samples/5.jpg",
+      "output": "data/nougat_batch_outputs/5.md",
+      "status": "success",
+      "process_time": 0.361400842666626,
+      "text_length": 2,
+      "preview": "\n\n"
+    },
+    {
+      "file": "data/pdf_ocr_samples/6.jpg",
+      "output": "data/nougat_batch_outputs/6.md",
+      "status": "success",
+      "process_time": 0.22939419746398926,
+      "text_length": 44,
+      "preview": "\n\n**Title**\n\n**Search Up**\n\n**Chetto Queen**"
+    },
+    {
+      "file": "data/pdf_ocr_samples/7.jpg",
+      "output": "data/nougat_batch_outputs/7.md",
+      "status": "success",
+      "process_time": 1.0655243396759033,
+      "text_length": 240,
+      "preview": "\n\n**Question:** \"_Of all song lengths, which one is the longest ?_\"\n\n\\begin{tabular}{|c|c|c|} \\hline \\multicolumn{2}{|c|}{_Table_} \\\\ \\hline\n**Title** & **Length** \\\\ \\hline Screwed Up & 5:02 \\\\ Ghett..."
+    },
+    {
+      "file": "data/pdf_ocr_samples/8.jpg",
+      "output": "data/nougat_batch_outputs/8.md",
+      "status": "success",
+      "process_time": 0.18692612648010254,
+      "text_length": 6,
+      "preview": "Model "
+    },
+    {
+      "file": "data/pdf_ocr_samples/9.jpg",
+      "output": "data/nougat_batch_outputs/9.md",
+      "status": "success",
+      "process_time": 0.2118527889251709,
+      "text_length": 2,
+      "preview": "\n\n"
+    }
+  ],
+  "model": "facebook/nougat-base",
+  "device": "cuda"
+}

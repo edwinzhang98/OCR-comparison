@@ -1,0 +1,83 @@
+{
+  "image": "data/pdf_ocr_samples/6.jpg",
+  "image_name": "6.jpg",
+  "total_processing_time": 1.417078971862793,
+  "presets_tested": 5,
+  "results": [
+    {
+      "preset": "chart_analysis",
+      "prompt": "Analyze this chart or scientific diagram in detail. Describe the data, labels, axes, trends, and any text elements you can see. Focus on accuracy and completeness.",
+      "generation_kwargs": {
+        "max_new_tokens": 800,
+        "do_sample": true,
+        "temperature": 0.3,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "a photo of a table with the text title length screwed up\n",
+      "inference_time": 0.22253704071044922,
+      "total_tokens": 10
+    },
+    {
+      "preset": "technical_description",
+      "prompt": "Provide a technical description of this image. Identify all text, numbers, symbols, and structural elements. Be precise and systematic in your analysis.",
+      "generation_kwargs": {
+        "max_new_tokens": 600,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.15,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      },
+      "output_text": "a photo of a table with the words \"screwed up\" on it\n",
+      "inference_time": 0.2930138111114502,
+      "total_tokens": 14
+    },
+    {
+      "preset": "comprehensive_caption",
+      "prompt": "Create a comprehensive caption for this image. Include all visible text, data points, chart elements, and contextual information. Make it suitable for academic or technical documentation.",
+      "generation_kwargs": {
+        "max_new_tokens": 1000,
+        "do_sample": true,
+        "temperature": 0.4,
+        "top_p": 0.95,
+        "repetition_penalty": 1.2,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "a photo of a table with the text \"ghetto queen\" and the number\n",
+      "inference_time": 0.3009061813354492,
+      "total_tokens": 14
+    },
+    {
+      "preset": "structured_analysis",
+      "prompt": "Analyze this image using a structured approach: 1) Identify the main elements, 2) Describe any text or labels, 3) Note data patterns or trends, 4) Summarize the overall purpose.",
+      "generation_kwargs": {
+        "max_new_tokens": 700,
+        "do_sample": true,
+        "temperature": 0.5,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "a photo of the table with a line chart and two different sizes\n",
+      "inference_time": 0.24558186531066895,
+      "total_tokens": 11
+    },
+    {
+      "preset": "precision_focused",
+      "prompt": "Describe this image with high precision. Pay special attention to exact text, numbers, symbols, and spatial relationships. Avoid speculation and focus on observable facts.",
+      "generation_kwargs": {
+        "max_new_tokens": 500,
+        "do_sample": false,
+        "num_beams": 4,
+        "repetition_penalty": 1.2,
+        "length_penalty": 1.1,
+        "early_stopping": true
+      },
+      "output_text": "a photo of a table with the words \"screwed up\" on it\n",
+      "inference_time": 0.3550400733947754,
+      "total_tokens": 14
+    }
+  ]
+}

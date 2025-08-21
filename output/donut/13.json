@@ -1,0 +1,303 @@
+{
+  "image": "data/pdf_ocr_samples/13.jpg",
+  "model_id": "naver-clova-ix/donut-base",
+  "created_at": "2025-08-20 06:44:17",
+  "results": [
+    {
+      "preset": "fast_draft",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "<s_cord-v2> TAPASBASE 1p TAPSBASE 2p TAPASE 4p TAPAS 8p TABASE 6p TPASBASE 16p TAPPASES [6p 63.4 TAPASASE 8p 16p PABASE | 6p 0p p S A BASE 1P TAPASPASE 4 5 3 9 p TAPASRASE 2 6.9 p TAPASASA INPARABE 1p TAPISASE 48456565666666666666 TAPASSASE 8p TA PASBASE 8c 14p TIPAPE MARE BEFORESTONERS EARb",
+      "output_json": {
+        "text_sequence": "TAPASBASE 1p TAPSBASE 2p TAPASE 4p TAPAS 8p TABASE 6p TPASBASE 16p TAPPASES [6p 63.4 TAPASASE 8p 16p PABASE | 6p 0p p S A BASE 1P TAPASPASE 4 5 3 9 p TAPASRASE 2 6.9 p TAPASASA INPARABE 1p TAPISASE 48456565666666666666 TAPASSASE 8p TA PASBASE 8c 14p TIPAPE MARE BEFORESTONERS EARb</s>"
+      },
+      "runtime_sec": 4.522318124771118,
+      "num_generated_tokens": 142,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:21"
+    },
+    {
+      "preset": "balanced_beam",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4,
+        "length_penalty": 0.95
+      },
+      "output_text": "<s_cord-v2> TAPASEASE 1p TAPASBASE 2p TAPSBASE 4p TAPASE 4p TAPASE 8p TAPABASE 16p TAPASASE 8p 16p 63.4 64.6 65. 62.4 35.6 37.0 62.4 34.6 64.5 65. 63.4 62.5 33.4 64.5 37.0 37.3 33.6 62.4 9.9% 8.4% 2p P TAPASE 2p p p TAPASE 1p P TAPASE 4p TA PASBASE 1 6p TAP A B B B BASE 4 TAP TAP TAPASE TAPA TAPA TAP T",
+      "output_json": {
+        "text_sequence": "TAPASEASE 1p TAPASBASE 2p TAPSBASE 4p TAPASE 4p TAPASE 8p TAPABASE 16p TAPASASE 8p 16p 63.4 64.6 65.<unk> 62.4 35.6 37.0 62.4 34.6 64.5 65.<unk> 63.4 62.5 33.4 64.5 37.0 37.3 33.6 62.4 9.9% 8.4% 2p P TAPASE 2p p p TAPASE 1p P TAPASE 4p TA PASBASE 1 6p TAP A B B B BASE 4 TAP TAP TAPASE TAPA TAPA TAP T</s>"
+      },
+      "runtime_sec": 2.429466962814331,
+      "num_generated_tokens": 155,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:24"
+    },
+    {
+      "preset": "long_page_strict",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "early_stopping": false,
+        "repetition_penalty": 1.12,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "<s_cord-v2> TAPASEASE 1p TAPASBASE 2p TAPSBASE 4p TAPASE 8p TAPASRASE 8p 16p TAPASASE 8p TAPABASE 16p 63.4 64.6 65. 62.4 35.6 37.0 62.4 34.6 64.5 65. 63.4 62.5 63.0 37.3 33.6 62.4 9.9% 8.4% 2p TAPASPASE 2p P P P P TAPASPARE TAPASPA TAPASP TAPASPE TAPASP BASE 8 p TAPASBSE 16p 16p p TAPASP",
+      "output_json": {
+        "text_sequence": "TAPASEASE 1p TAPASBASE 2p TAPSBASE 4p TAPASE 8p TAPASRASE 8p 16p TAPASASE 8p TAPABASE 16p 63.4 64.6 65.<unk> 62.4 35.6 37.0 62.4 34.6 64.5 65.<unk> 63.4 62.5 63.0 37.3 33.6 62.4 9.9% 8.4% 2p TAPASPASE 2p P P P P TAPASPARE TAPASPA TAPASP TAPASPE TAPASP BASE 8 p TAPASBSE 16p 16p p TAPASP</s>"
+      },
+      "runtime_sec": 7.464409589767456,
+      "num_generated_tokens": 146,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:31"
+    },
+    {
+      "preset": "formula_friendly",
+      "prompt": "Transcribe math as LaTeX when clear; keep original text for body.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3,
+        "length_penalty": 1.0
+      },
+      "output_text": "Transcribe math as LaTeX when clear; keep original text for body. TAPASBASE 4p TA PASBASE 8p TA SBASE 16p 63.4 64.6 65. 65. 62.4 34.6 35.6 37.0 37.3 63.6 32.4 34.5 64.5 65.0 64.3 33.6 32.2 9.9% 8.4% 8.1% 7.2% 7.0%",
+      "output_json": {
+        "text_sequence": "TAPASBASE 4p TA PASBASE 8p TA SBASE 16p 63.4 64.6 65. 65. 62.4 34.6 35.6 37.0 37.3 63.6 32.4 34.5 64.5 65.0 64.3 33.6 32.2 9.9% 8.4% 8.1% 7.2% 7.0%</s>"
+      },
+      "runtime_sec": 2.6446573734283447,
+      "num_generated_tokens": 85,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:34"
+    },
+    {
+      "preset": "table_markdown",
+      "prompt": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 900,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text. TAPASBASE 4p p SP ABAB 8p PSP 1 6p TFPFFRKS TA TRASE 16 60 30 50506040908080 0 0 0 64 58585545856545 4949594739 39.4 5 TAPA SBASE 8p TAP TP SEASE 8c f APARSHEEP SARE % %%%% [ 6.7 63.4 68 69 62.6 65. PA PASBASE &p TAPA BASE L EARFORMERBAE 6g 36.5 APT",
+      "output_json": {
+        "text_sequence": "TAPASBASE 4p p SP ABAB 8p PSP 1 6p TFPFFRKS TA TRASE 16 60 30 50506040908080 0 0 0 64 58585545856545 4949594739 39.4 5 TAPA SBASE 8p TAP TP SEASE 8c f APARSHEEP SARE % %%%% [ 6.7 63.4 68 69 62.6 65.<unk> PA PASBASE &p TAPA BASE L EARFORMERBAE 6g 36.5 APT</s>"
+      },
+      "runtime_sec": 6.573730230331421,
+      "num_generated_tokens": 142,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:40"
+    },
+    {
+      "preset": "page_summary",
+      "prompt": "Provide a concise one-sentence summary of the page content.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 64,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.92
+      },
+      "output_text": "Provide a concise one-sentence summary of the page content. 1p A BASE 2p TAPASBASE 4 TAPASBASE 8p TAPASBASE 16p TAPASBASE 1 6 8p TAPASBASE 8p TAPASBASE 16p 63.4 64.5 35. 62.4 64.6 35.0 6",
+      "output_json": {
+        "text_sequence": "1p A BASE 2p TAPASBASE 4 TAPASBASE 8p TAPASBASE 16p TAPASBASE 1 6 8p TAPASBASE 8p TAPASBASE 16p 63.4 64.5 35.<unk> 62.4 64.6 35.0 6</s>"
+      },
+      "runtime_sec": 6.1435325145721436,
+      "num_generated_tokens": 80,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:46"
+    },
+    {
+      "preset": "universal_doc",
+      "prompt": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1000,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON. From From From From Total Total Total",
+      "output_json": {
+        "text_sequence": "From From From From Total Total Total</s>"
+      },
+      "runtime_sec": 0.9148228168487549,
+      "num_generated_tokens": 234,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:47"
+    },
+    {
+      "preset": "router_probe",
+      "prompt": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool,  \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\",  \"table_size\": \"none|small|large\", \"confidence\": number}.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 48,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true
+      },
+      "output_text": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP",
+      "output_json": {
+        "text_sequence": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP IP</s>"
+      },
+      "runtime_sec": 0.3656926155090332,
+      "num_generated_tokens": 154,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:48"
+    },
+    {
+      "preset": "eq_compact",
+      "prompt": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 160,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 2,
+        "repetition_penalty": 1.2,
+        "early_stopping": true
+      },
+      "output_text": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols. 2p TA TA BA BA 4p .5. 37.3 62.4 6 6 5 0 0 1 % %%%6%6%.6% 6%.6 65.0 0.1% % TAPASBASE 8 p TA PA SBASE I6p TAP A B BASEASE 2 p T AP A S D A E E F F R R A A T PASBASE 4 p A P T. S. 0 %.2. 1 0 1. % 0 , 0 6.7. 1. 0 66. I T TAF S 0 r r 0 n n 0 T A. T P P A r. / / 0 63. % ns. d.f. p p 64. b. s. l p 5.8 0 68.",
+      "output_json": {
+        "text_sequence": "2p TA TA BA BA 4p .5.<unk> 37.3 62.4 6 6 5 0 0 1 % %%%6%6%.6% 6%.6 65.0 0.1% % TAPASBASE 8 p TA PA SBASE I6p TAP A B BASEASE 2 p T AP A S D A E E F F R R A A T PASBASE 4 p A P T. S. 0 %.2. 1 0 1. % 0 , 0 6.7. 1. 0 66. I T TAF S 0 r r 0 n n 0 T A. T P P A r. / / 0 63. % ns. d.f. p p 64. b. s. l p 5.8 0 68.</s>"
+      },
+      "runtime_sec": 1.1576452255249023,
+      "num_generated_tokens": 184,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:49"
+    },
+    {
+      "preset": "table_strict_md",
+      "prompt": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 480,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize. 1p TAPASBASE 4p TAPA SBASE 8p T TAPASBATE 16p T TATASBASE 8p TA PASBASE 16p 63.4 64.6 65. 65. 62.4 T TAPA S BASE 8 p T TAPA BASE 1 p TAPA 2p TAPA S T TAPA 2 TAPA SASE 1p TABASE 2p T T TAPA 1p T. TAPA 1 p T T T T. T TAPASE TAPASE 1p T TAP TAPASE 16p TAPASE 8p TAPA 16pp TAPASE 18 TAPASE 19 TAPA 16p 65. 16p T 16pp T 16p TAP 16p T 6 T 16p TA T 16pp 65. 19 T 16pp TA T 16 16 16 16pp T 10 65. 16 16 16 p T 16 16 p 65. 15 16 16 16 pp 65. 8p 65. 8pp 65. 16pp T 6 65. 16 p TA T 16p 69 65. 5 65. 6 65. 19 63. 16p 65 1 65. 8c 65. 16m 65. 6 63. 6 65 65. 19 65. 19 TORP TAPAS 65. 63. 63. . 63. SAMPA 63. SPORT @",
+      "output_json": {
+        "text_sequence": "1p TAPASBASE 4p TAPA SBASE 8p T TAPASBATE 16p T TATASBASE 8p TA PASBASE 16p 63.4 64.6 65.<unk> 65.<unk> 62.4 T TAPA S BASE 8 p T TAPA BASE 1 p TAPA 2p TAPA S T TAPA 2 TAPA SASE 1p TABASE 2p T T TAPA 1p T. TAPA 1 p T T T T. T TAPASE TAPASE 1p T TAP TAPASE 16p TAPASE 8p TAPA 16pp TAPASE 18 TAPASE 19 TAPA 16p 65. 16p T 16pp T 16p TAP 16p T 6 T 16p TA T 16pp 65. 19 T 16pp TA T 16 16 16 16pp T 10 65. 16 16 16 p T 16 16 p 65. 15 16 16 16 pp 65. 8p 65. 8pp 65. 16pp T 6 65. 16 p TA T 16p 69 65. 5 65. 6 65. 19 63. 16p 65 1 65. 8c 65. 16m 65. 6 63. 6 65 65. 19 65. 19 TORP TAPAS 65. 63. 63. . 63. SAMPA 63. SPORT @</s>"
+      },
+      "runtime_sec": 2.303893804550171,
+      "num_generated_tokens": 316,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:51"
+    },
+    {
+      "preset": "wide_table_md",
+      "prompt": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1600,
+          "width": 1130
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.12,
+        "early_stopping": false
+      },
+      "output_text": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content. 4p TAPA SBASE 8p TAPASBASE 16p TAPASBASE 8p S S S SASE 1 6 6 8 8 8 8 4 8 8 4 4 8 8 8 6 8 8 1 6 6 6 6 8 1 6p TA SBASE 4p TA PASBASE 4p 8p 8p 6p TAPA BASE 8p 4p BASE 1p 4p 2p 4p 4p 8 p TAPA 2p 2p P 2p SP 8p 2p TABABSE 2p TAPAP 2p TIP 2p TAP 2p T&amp TAPAp 2p S&amp T&ampt 2p T 2p T P 2p TTP 2p TPMENT 2p TSP 2p T AP AP AP AP T&amp P P 2p TABE 2p T 8p TAP T&amp TAPE T&amps T&amp D&amp TAP&amp TABBE T&amp BASE 2p T T&amp SAMPT 2p BABE 8.8p TABE TOUR 8.8 T&amp p T&amp dp BABE TABE TABLE 2p THATE TABLE TOUR P P P Qp TABE",
+      "output_json": {
+        "text_sequence": "4p TAPA SBASE 8p TAPASBASE 16p TAPASBASE 8p S S S SASE 1 6 6 8 8 8 8 4 8 8 4 4 8 8 8 6 8 8 1 6 6 6 6 8 1 6p TA SBASE 4p TA PASBASE 4p 8p 8p 6p TAPA BASE 8p 4p BASE 1p 4p 2p 4p 4p 8 p TAPA 2p 2p P 2p SP 8p 2p TABABSE 2p TAPAP 2p TIP 2p TAP 2p T&amp TAPAp 2p S&amp T&ampt 2p T 2p T P 2p TTP 2p TPMENT 2p TSP 2p T AP AP AP AP T&amp P P 2p TABE 2p T 8p TAP T&amp TAPE T&amps T&amp D&amp TAP&amp TABBE T&amp BASE 2p T T&amp SAMPT 2p BABE 8.8p TABE TOUR 8.8 T&amp p T&amp dp BABE TABE TABLE 2p THATE TABLE TOUR P P P Qp TABE</s>"
+      },
+      "runtime_sec": 3.091466188430786,
+      "num_generated_tokens": 302,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:54"
+    },
+    {
+      "preset": "figure_bullets",
+      "prompt": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 180,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9
+      },
+      "output_text": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values. 4p TAPAAPASBASE 8p TAPASBASE 16p TAPASBASE 4p TAPASBASE 8p TAPASBASE 2p TAPASBASE 4p TAPASBASE TAPSBASE 2p 2p TAPA PA. Tp .p P TAPAB.p.p. Tp.pp.p.pp.p.pp.pp.p.pp TAPA.p.pp.pppp TAPA.pppp.pppp.pppp.pppppppppp T.pppppppppppppppppp T.pp T.c.pppppppp.pp.p pp.pppp.pppp.Po.pppppp.com.pppppppp.pp.pppp.pppppp.Po.pppp.pppp",
+      "output_json": {
+        "text_sequence": "4p TAPAAPASBASE 8p TAPASBASE 16p TAPASBASE 4p TAPASBASE 8p TAPASBASE 2p TAPASBASE 4p TAPASBASE TAPSBASE 2p 2p TAPA PA. Tp .p P TAPAB.p.p. Tp.pp.p.pp.p.pp.pp.p.pp TAPA.p.pp.pppp TAPA.pppp.pppp.pppp.pppppppppp T.pppppppppppppppppp T.pp T.c.pppppppp.pp.p pp.pppp.pppp.Po.pppppp.com.pppppppp.pp.pppp.pppppp.Po.pppp.pppp</s>"
+      },
+      "runtime_sec": 1.176335334777832,
+      "num_generated_tokens": 210,
+      "error": null,
+      "timestamp": "2025-08-20 06:44:55"
+    }
+  ],
+  "presets_run": [
+    "balanced_beam",
+    "eq_compact",
+    "fast_draft",
+    "figure_bullets",
+    "formula_friendly",
+    "long_page_strict",
+    "page_summary",
+    "router_probe",
+    "table_markdown",
+    "table_strict_md",
+    "universal_doc",
+    "wide_table_md"
+  ]
+}

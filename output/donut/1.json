@@ -1,0 +1,303 @@
+{
+  "image": "data/pdf_ocr_samples/1.jpg",
+  "model_id": "naver-clova-ix/donut-base",
+  "created_at": "2025-08-20 06:43:20",
+  "results": [
+    {
+      "preset": "fast_draft",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "<s_cord-v2>",
+      "output_json": {
+        "text_sequence": "</s>"
+      },
+      "runtime_sec": 2.7080881595611572,
+      "num_generated_tokens": 9,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:23"
+    },
+    {
+      "preset": "balanced_beam",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4,
+        "length_penalty": 0.95
+      },
+      "output_text": "<s_cord-v2>",
+      "output_json": {
+        "text_sequence": "</s>"
+      },
+      "runtime_sec": 2.554027795791626,
+      "num_generated_tokens": 9,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:26"
+    },
+    {
+      "preset": "long_page_strict",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "early_stopping": false,
+        "repetition_penalty": 1.12,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "<s_cord-v2> || |||| 0|||0||||||",
+      "output_json": {
+        "text_sequence": "|| |||| 0|||0|||<unk>|||</s>"
+      },
+      "runtime_sec": 1.389793872833252,
+      "num_generated_tokens": 29,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:27"
+    },
+    {
+      "preset": "formula_friendly",
+      "prompt": "Transcribe math as LaTeX when clear; keep original text for body.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3,
+        "length_penalty": 1.0
+      },
+      "output_text": "Transcribe math as LaTeX when clear; keep original text for body. .",
+      "output_json": {
+        "text_sequence": ".</s>"
+      },
+      "runtime_sec": 1.1306428909301758,
+      "num_generated_tokens": 19,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:28"
+    },
+    {
+      "preset": "table_markdown",
+      "prompt": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 900,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text. must do be on anywhere use only is not to you a listing for yourselves us that me",
+      "output_json": {
+        "text_sequence": "must do be on anywhere use only is not to you a listing for yourselves us that me</s>"
+      },
+      "runtime_sec": 1.325272560119629,
+      "num_generated_tokens": 47,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:30"
+    },
+    {
+      "preset": "page_summary",
+      "prompt": "Provide a concise one-sentence summary of the page content.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 64,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.92
+      },
+      "output_text": "Provide a concise one-sentence summary of the page content. A S S S S S S S",
+      "output_json": {
+        "text_sequence": "A S S S S S S S</s>"
+      },
+      "runtime_sec": 1.1786623001098633,
+      "num_generated_tokens": 25,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:31"
+    },
+    {
+      "preset": "universal_doc",
+      "prompt": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1000,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.V.W.W.V.V.B.W.BeBeBeGeGeGeGeBeBeBeBeB.BeBeEBeBeBeReBeBeBeBaBaBaBaBeBeBeSoSoSoSoBeBeBeMeMeMeMeBeBeBeE.BeBeBBeBeBeSBeBeBeDeBeBeBeHeBeBeBeInBeBeBePoPoPoPoBeBeBeSeSeBeBeBeMaBeBeBeBiBeBeBeMoBeBeBeFiBeBeBePaBeBeBeBoBeBeBeGaGeGeGeMeBeBeB",
+      "output_json": {
+        "text_sequence": "V.W.W.V.V.B.W.BeBeBeGeGeGeGeBeBeBeBeB.BeBeEBeBeBeReBeBeBeBaBaBaBaBeBeBeSoSoSoSoBeBeBeMeMeMeMeBeBeBeE.BeBeBBeBeBeSBeBeBeDeBeBeBeHeBeBeBeInBeBeBePoPoPoPoBeBeBeSeSeBeBeBeMaBeBeBeBiBeBeBeMoBeBeBeFiBeBeBePaBeBeBeBoBeBeBeGaGeGeGeMeBeBeB</s>"
+      },
+      "runtime_sec": 1.4087131023406982,
+      "num_generated_tokens": 353,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:32"
+    },
+    {
+      "preset": "router_probe",
+      "prompt": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool,  \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\",  \"table_size\": \"none|small|large\", \"confidence\": number}.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 48,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true
+      },
+      "output_text": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A",
+      "output_json": {
+        "text_sequence": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A = A</s>"
+      },
+      "runtime_sec": 0.5601809024810791,
+      "num_generated_tokens": 154,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:33"
+    },
+    {
+      "preset": "eq_compact",
+      "prompt": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 160,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 2,
+        "repetition_penalty": 1.2,
+        "early_stopping": true
+      },
+      "output_text": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols. A = = , = 4 4 2 2 3 3 4 = 0 0",
+      "output_json": {
+        "text_sequence": "A = = , = 4 4 2 2 3 3 4 = 0 0</s>"
+      },
+      "runtime_sec": 0.4255034923553467,
+      "num_generated_tokens": 41,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:33"
+    },
+    {
+      "preset": "table_strict_md",
+      "prompt": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 480,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize. A = = A = = = = , A = = ▲ A = , = ▲ A = =",
+      "output_json": {
+        "text_sequence": "A = = A = = = = , A = = ▲ A = , = ▲<unk> A = =</s>"
+      },
+      "runtime_sec": 0.5814366340637207,
+      "num_generated_tokens": 63,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:34"
+    },
+    {
+      "preset": "wide_table_md",
+      "prompt": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1600,
+          "width": 1130
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.12,
+        "early_stopping": false
+      },
+      "output_text": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content. A = A = , A = = , = , 4 = = . A = .A = , , A A =  , A",
+      "output_json": {
+        "text_sequence": "A = A = , A = = , = , 4 = = . A = .A = , , A A = <unk> , A</s>"
+      },
+      "runtime_sec": 0.8378000259399414,
+      "num_generated_tokens": 72,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:35"
+    },
+    {
+      "preset": "figure_bullets",
+      "prompt": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 180,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9
+      },
+      "output_text": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values. A = = = A = = = = A = = = A = = = A = = = A = = A = = A = = A = = A = A = A = A = A = A = = = = = A = = A = = A = A = = = = = = A = = = = A = = = = = = A = = = = = = = = = = A = = = = = = = = = = = = = = A = = = = = = = = = = = = = = = = = = = = = A = = = = = = = = = = = = = A = = = A = = A=:TheThe5.W.....E..B..5.:F.B.B.PoPoPoPoPoPo",
+      "output_json": {
+        "text_sequence": "A = = = A = = = = A = = = A = = = A = = = A = = A = = A = = A = = A = A = A = A = A = A = = = = = A = = A = = A = A = = = = = = A = = = = A = = = = = = A = = = = = = = = = = A = = = = = = = = = = = = = = A = = = = = = = = = = = = = = = = = = = = = A = = = = = = = = = = = = = A = = = A = = A=:TheThe5.W.....E..B..5.:F.B.B.PoPoPoPoPoPo</s>"
+      },
+      "runtime_sec": 1.2859179973602295,
+      "num_generated_tokens": 210,
+      "error": null,
+      "timestamp": "2025-08-20 06:43:36"
+    }
+  ],
+  "presets_run": [
+    "balanced_beam",
+    "eq_compact",
+    "fast_draft",
+    "figure_bullets",
+    "formula_friendly",
+    "long_page_strict",
+    "page_summary",
+    "router_probe",
+    "table_markdown",
+    "table_strict_md",
+    "universal_doc",
+    "wide_table_md"
+  ]
+}

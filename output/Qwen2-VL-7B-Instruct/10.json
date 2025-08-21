@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/10.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure shows a mathematical relationship between three variables, \\( Q \\), \\( V \\), and \\( K \\), each expressed as a function of \\( H \\) and \\( W \\). The equations are as follows:\n\n- \\( Q = H W^Q \\)\n- \\( V = HW^V \\) \n- \\( K = HW^K \\)\n\nThe axes are not explicitly shown, but it can be inferred that the figure represents a graph where the variables on the y-axis are plotted against the corresponding values of \\( Q, V, \\) or \\( K\\) on the x-axis. The units for each variable are not specified in the figure. The main trend depicted is the exponential relationship between the variables \\( H, W, Q \\) (or \\( V, K \\)) as indicated by the exponents in the equations."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image displays a mathematical equation involving three variables: \\( Q \\), \\( V \\), and \\( K \\). The equation is structured as follows:\n\n\\[ Q = H W^Q, \\quad V = HW^V, \\]\n\\[ K = HW^K. \\]\n\nIn this equation, \\( H \\) and \\( W \\) are constants or functions, and the exponents \\( Q, V, K \\) indicate the powers to which \\( HW \\) is raised for each respective variable. The equation suggests a relationship where each variable is defined as a power of the product \\( H W \\), with each variable having its own distinct exponent."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure shows three equations: Q = HW^Q, V = HW^V, and K = HW^K. The variables Q, V, and K are equal to the product of H, W, and a superscripted variable (Q, V, or K) respectively."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image contains a mathematical equation that defines three variables \\( Q \\), \\( V \\), and \\( K \\) in terms of \\( H \\), W, and a superscripted letter \\( Q, V, \\) or \\( K. \\) The equation is as follows:\n\n\\[ Q = H W^Q, \\quad V = HW^V, \\; \\; K = H \\cdot W^K \\]\n\n### Description:\n\n1. **Axes and Units:**\n   - There are no explicit axes or units provided in the image.\n   - The variables \\( H, W, Q, \\), etc., are likely to be dimensionless or have unspecified units.\n\n2. **Labels:**\n    - The equation uses superscripts \\( Q^Q \\), which might indicate powers or exponents.\n    - There is no explicit labeling of the variables \\( W \\) and \\( H. \\)\n\n3. **Trends:**\n  - The trend in the equation is that each variable \\( Q,\\) \\( V,\\) and  \\( K\\) is defined as a product of \\(H\\) and \\(W\\) raised to a power or exponent.\n  - Specifically:\n    - \\( Q = HW^Q: \\) This suggests that \\( Q\\) is directly proportional to \\( H\\) and also depends on \\( W\\) raised by the power \\( Q\\).\n    - Similarly, \\( V = HW^{V} \\) indicates that \\( V\\) is also directly proportional and depends on the same relationship with \\( W\\).\n  - \\( K = HW^K \\) follows the same pattern, where \\( K\\), like \\( Q \\( and \\( V\\), is directly related to \\(H\\), \\(W\\), and an exponent \\(K\\).\n\n### Analysis:\n\n- **Mathematical Structure:**\nThe structure of the equation suggests a relationship between \\(H, W,\\)  and the variables  \\(Q, V,\\), and  \\(\\text{K}\\). The use of exponents indicates that these relationships are non-linear.\n  \n- **Possible Interpretation:**\nGiven the form of the equations, it could represent a scenario where \\(H \\) is a constant factor, and \\( W^{\\text{variable}} \\) represents a variable factor that changes with respect to \\( W. \\)\n  \n-**Applications:**\nThis type of relationship could be used in various fields such as physics, chemistry, or economics, where one variable is dependent on another through a power function.\n\n### Conclusion"
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

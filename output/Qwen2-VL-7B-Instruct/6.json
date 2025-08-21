@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/6.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure is a table titled \"Screwed Up\" and \"Ghetto Queen\" with two columns labeled \"Length\" and their corresponding values of 5:02 and 5.00, respectively."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image is a table titled \"Title\" and \"Length\" with two rows. The first row has the title \"Screwed Up\" and a length of \"5:02\". The second row also has a title \"Ghetto Queen\" and the same length as the first row, which is 5 minutes and 2 seconds."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nScrewed Up is 2 minutes longer than Ghetto Queen."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image is a table that lists two songs along with their respective lengths. Here is a precise description:\n\n### Table Description\n\n#### Title\n- **Screwed Up**\n- **Ghetto Queen**\n\n#### Length\n- 5:02\n- The length of \"ScrewED Up\" is 5 minutes and 2 seconds.\n- 4:59\n- \"Ghetto QueEn\" has a length of 4 minutes and approximately 59 seconds.\n\n### Analysis\n\n1. **Axes and Units**: \n   - The table does not have traditional axes or units as it is a simple list format.\n   - It lists song titles and their corresponding lengths in minutes and seconds.\n\n2. **Labels**:\n   - **Title**: This column lists the names of the songs.\n   1. \"Screeded Up\"\n   2. \"Ghett0 QueEn\"\n   - These titles are likely misspelled intentionally for artistic or stylistic reasons.\n   **Length**: This is the second column, listing the duration of each song in minutes followed by seconds.\n\n3. **Trends**:\n    - **Length Comparison**: \"Scream Up\" has the longer duration at 5.02 minutes compared to \"Ghetto QueEn,\" which is slightly shorter at 4.59 minutes.\n    - The difference in length between the two songs is approximately 0.43 minutes or 25.8 seconds.\n\nThis table provides a straightforward comparison of the lengths of two songs, with \"Sream Up\" being the longer of the two."
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

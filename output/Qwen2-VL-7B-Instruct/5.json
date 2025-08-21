@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/5.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure is a table comparing the performance of different models (Eisenschlos et al. 2020, TapasBase, TableFormerBase, TapASLarge, Table FormerLarge, TapAsBase inter, TableformerBase inter) on various datasets (dev, test, test_simple, test_complex, test_small) before and after perturbation. The performance is measured in terms of accuracy, with values ranging from 72.3 to 93.3. The main trend is that the models generally perform better on the test and test_complex datasets compared to the dev and test_small datasets."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image is a table comparing the performance of different models on various datasets before and after perturbation. The table is divided into two main sections: \"Before Perturb\" and \"After Perturb.\" Each section is further divided into sub-sections labeled \"dev,\" \"test,\" and \"test_complex,\" as well as \"test_small.\" The models compared are \"Eisenschlos et al. (2020)\" and \"TAPASBASE,\" \"TABLEFORMERBASE,\" and their respective \"inter\" versions. The performance metrics are presented as percentages. For example, under \"dev\" in the \"Before Perurb\" section, the performance for \"EisenSchlos et. al. 2019\" is 81.0, and for \"TAPPASBASE\" it is 72.8. After perturbation, the performances vary, with some models showing improvements and others showing declines."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe table shows the test results of different models before and after perturbation. The models include TapasBase, TableFormerBase, TapasLarge, TableFormerLarge, TapasBase inter, and TableFormerLarge inter. The metrics include dev, test, test simple, test complex, and test small. The values range from 72.3 to 93.3."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure is a table that presents the performance of different models on various datasets before and after perturbation. The table is divided into two main sections: \"Before Perturb\" and \"After Perturb.\" Each section contains multiple rows and columns, with the rows representing different models and the columns representing different datasets.\n\n### Axes and Units:\n- **X-axis:** Not explicitly labeled, but it represents different datasets.\n- **Y-axis:** Represents different models.\n\n### Labels:\n- The table has a header row that labels the columns as \"dev,\" \"test,\" \"testsimple,\" \"tectomplex,\" \" testsmall,\" \" test,\" \" tectomple,\" \" teslsmall,\" \" TAPASBASE,\" \" TABLEFORMERBASE,\" and so on.\n- The rows are labeled with different models: \"Eisenschlos et al. (2020),\" \"Eisencllos et a1. ( 2014),\" \"TAPASLARGE,\" \"TABLEFORMERLARGE inter,\" \"TAPA5BASE inter,\" and \"TABLEFOMERLARG inter.\"\n\n### Visible Trends:\n1. **Performance Before Perturb:**\n   - The performance of all models is generally higher before perturbation compared to after perturb.\n   - Models like \"TAPPASLARG\" and TABLEFORMERALARGE\" show a significant drop in performance after pertubation, especially on the \"test\" and related sub-datasets.\n  "
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

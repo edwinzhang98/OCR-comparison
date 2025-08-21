@@ -1,0 +1,303 @@
+{
+  "image": "data/pdf_ocr_samples/14.jpg",
+  "model_id": "naver-clova-ix/donut-base",
+  "created_at": "2025-08-20 06:44:55",
+  "results": [
+    {
+      "preset": "fast_draft",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "<s_cord-v2> - Same e l a d t r . 0 1 - ) - Same Coll - Call to Column - Cell to - Header to - Header to - Reader to Other Header - Headar to Same Header () - - Hender to Sentence - Sentence to Cell - - Sentence to Cll - Sentance to - Sentenc to - Senence to Hell - Sentend to Selentence - to Sender - Sentence to Helder - Sentense to Sentenc - All to Counc - - - ) / - - A11 - - to - - Alliance to - ) --() - )------------------------------ - -",
+      "output_json": {
+        "text_sequence": "- Same e l a d t r . 0 1 - ) - Same Coll - Call to Column - Cell to - Header to - Header to - Reader to Other Header - Headar to Same Header () - - Hender to Sentence - Sentence to Cell - - Sentence to Cll - Sentance to - Sentenc to - Senence to Hell - Sentend to Selentence - to Sender - Sentence to Helder - Sentense to Sentenc - All to Counc - - - ) / - - A11 - - to - - Alliance to - ) --() - )------------------------------ - -</s>"
+      },
+      "runtime_sec": 7.123131513595581,
+      "num_generated_tokens": 160,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:03"
+    },
+    {
+      "preset": "balanced_beam",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4,
+        "length_penalty": 0.95
+      },
+      "output_text": "<s_cord-v2> - - Same - Same e e e e r r r r t r r r e e e d e e e f r r r - Same to - ) - ) - to 0 0 0 0 6 0 0 0 9 9 9 9 8 9 9 9 6 1 - - ) - 0 0 0 4, 0 0 0 2, 4, 6) 62.1 61.8 60.7 60.5 60.5 60.6 61. 60.8 61.0 60.8 60.8 - Sentence to Header - Senence to Sentence - All - ) - - - ) Sentence to to - - Sentence - to - - - Senence - to to - Sentence , , . . - . , - .",
+      "output_json": {
+        "text_sequence": "- - Same - Same e e e e r r r r t r r r e e e d e e e f r r r - Same to - ) - ) - to 0 0 0 0 6 0 0 0 9 9 9 9 8 9 9 9 6 1 - - ) - 0 0 0 4, 0 0 0 2, 4, 6) 62.1 61.8 60.7 60.5 60.5 60.6 61.<unk> 60.8 61.0 60.8 60.8 - Sentence to Header - Senence to Sentence - All - ) - - - ) Sentence to to - - Sentence - to - - - Senence - to to - Sentence , , . . - . , - .</s>"
+      },
+      "runtime_sec": 1.8858072757720947,
+      "num_generated_tokens": 168,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:04"
+    },
+    {
+      "preset": "long_page_strict",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "early_stopping": false,
+        "repetition_penalty": 1.12,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "<s_cord-v2> - - - Same e e e e r r r r - Same Coll - ) - - ) - ) - 0 0 0 0 9 9 9 9 6 9 9 9 8 9 9 9 5 9 9 9 3 9 9 6 6 1 0 0 0 - - - Sentence to Center to - Sentence - to Cll - ) - to to Sentence to Header 60.8 61.0 60.0 0 0 0 2, 4, 6) - All Column Related (# 2, 5 32.1 62.1 61.8 60.7 60.5 60.5 60.6 61.0 61.1 60.8 60.8 0 0 0 611 - - ) |||| | || , | . , , . . | ,",
+      "output_json": {
+        "text_sequence": "- - - Same e e e e r r r r - Same Coll - ) - - ) - ) - 0 0 0 0 9 9 9 9 6 9 9 9 8 9 9 9 5 9 9 9 3 9 9 6 6 1 0 0 0 - - - Sentence to Center to - Sentence - to Cll - ) - to to Sentence to Header 60.8 61.0 60.0 0 0 0 2, 4, 6) - All Column Related (# 2, 5 32.1 62.1 61.8 60.7 60.5 60.5 60.6 61.0 61.1 60.8 60.8 0 0 0 611 - - ) |||| | || , | . , , . . | ,</s>"
+      },
+      "runtime_sec": 6.685579776763916,
+      "num_generated_tokens": 179,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:11"
+    },
+    {
+      "preset": "formula_friendly",
+      "prompt": "Transcribe math as LaTeX when clear; keep original text for body.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3,
+        "length_penalty": 1.0
+      },
+      "output_text": "Transcribe math as LaTeX when clear; keep original text for body. 32.1 62.1 61.8 60.7 60.5 60.6 61. 60.8 - Sentence to Header - Senence to Sentence - All Column Related (# 2, 4, 6) 2.8 37.7 38.4 36.6 36.4 36.4 35.8 35.8 36.9 36.3 36.2 37.3 35.3 29.3 62.1 61.1 60.0 54.5 32.1 62. 62.1 31.8 62.1 - Header to 2.8 33.4 2.8 32.4.",
+      "output_json": {
+        "text_sequence": "32.1 62.1 61.8 60.7 60.5 60.6 61.<unk> 60.8 - Sentence to Header - Senence to Sentence - All Column Related (# 2, 4, 6) 2.8 37.7 38.4 36.6 36.4 36.4 35.8 35.8 36.9 36.3 36.2 37.3 35.3 29.3 62.1 61.1 60.0 54.5 32.1 62.<unk> 62.1 31.8 62.1 - Header to 2.8 33.4 2.8 32.4.</s>"
+      },
+      "runtime_sec": 2.1518421173095703,
+      "num_generated_tokens": 128,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:13"
+    },
+    {
+      "preset": "table_markdown",
+      "prompt": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 900,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text. - Please Send to - Same To Se Re Re Rear - Sentence - ||=0704060000000000000 - And Call to Coll - ---------- () All State In - Column - ) (All A C ee - 1 - _________________ - 60 9 61.1 0 61.8 60.6 - Sentance to Header - Sentense to Sentence to - All - 'Sentence to Centence - - - Sentence to to - to - - Sentende - - in 2, of the 2, and a dshall 42, 4, 4.9 2.0% 40. sholds 24. 24 % 34.2 442 20. 23.46 263 31.3136. 50. 36.3. 36.3 26. 4949301326 6688 30. 8 8.29 21.9698 29 29.4 25, 43. 46.28 50525 28.40% 4110 00.2018 60. 45: 3.60 080 25.45 2, 21, 2017.02.03 32.39 25.20 2, 55% 9.2 $15050 20, 4& 33.24.95 9/2 24.48 28, 23,",
+      "output_json": {
+        "text_sequence": "- Please Send to - Same To Se Re Re Rear - Sentence - ||<unk>=0704060000000000000 - And Call to Coll - ---------- () All State In - Column - ) (All A C ee - 1 - _________________ - 60 9 61.1 0 61.8 60.6 - Sentance to Header - Sentense to Sentence to - All - 'Sentence to Centence - - - Sentence to to - to - - Sentende - - in 2, of the 2, and a dshall 42, 4, 4.9 2.0% 40. sholds 24. 24 % 34.2 442 20. 23.46 263 31.3136. 50. 36.3. 36.3 26. 4949301326 6688 30. 8 8.29 21.9698 29 29.4 25, 43. 46.28 50525 28.40% 4110 00.2018 60. 45: 3.60 080 25.45 2, 21, 2017.02.03 32.39 25.20 2, 55% 9.2 $15050 20, 4& 33.24.95 9/2 24.48 28, 23,</s>"
+      },
+      "runtime_sec": 5.210006237030029,
+      "num_generated_tokens": 264,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:18"
+    },
+    {
+      "preset": "page_summary",
+      "prompt": "Provide a concise one-sentence summary of the page content.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 64,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.92
+      },
+      "output_text": "Provide a concise one-sentence summary of the page content. - Same Pee - Same R R - - Seatence to - Seat to - Seat Cell - Seat Call - Secution to - Header to Column - Header to - Header to - - Senence - Sentence to Call - - Sentence to Header -",
+      "output_json": {
+        "text_sequence": "- Same Pee - Same R R - - Seatence to - Seat to - Seat Cell - Seat Call - Secution to - Header to Column - Header to - Header to - - Senence - Sentence to Call - - Sentence to Header -</s>"
+      },
+      "runtime_sec": 1.1254761219024658,
+      "num_generated_tokens": 80,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:20"
+    },
+    {
+      "preset": "universal_doc",
+      "prompt": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1000,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.WWWWWWWWWWSWSWSWS - .WBASE - .com/PoPoPoPossesssessses.WWWWSWSWWWWWWSPSPS://WWWWW.WWSWSWSMSMSMSMSWSWSWSPSPSPSPSWSWSWSWWSWSMSWSWSWMSMSMSRSEWSWSWSHSHSMSMSMS/WWWWWWWWWSWWWWSMSMSRSRSRSRSWSWSWSKSWSWSWSWWWWWW.SWSWSWSRSRSRSMSMSMS,WWWWWMSMSMSWWWWW,WWWWSRSRSMSWSWSPSWSWSWBWSWSWS/PoPoRTWSWSWS.WWW.WMSWSWSMSRSRSMSRSRS/PoPownWSWSWSRFRFRFRFRSRSRS/WWWWS/WMSMSRSMSMSWSMSMS/Prs.WMSMS/ToToToTownWSWSRSMSMS/PoPoRPWSWSWSPGMSMSMSRFRFRFWSWSWSProProProPromoWSWSWS, WSWSWSMISMISMISMISMSMSMS (%), RFRFRFGMSMSMS 62.1 62.1 2.8 62.1 6, 2.8 9, 2.8 2.8 3, 2.8 2, 2.8 %, 2.8 35.8 62.1 62.0 2.8 62.8 62.1 61. 2.8 32.8 2.8 37. 2.8 5.8 62.1 35.8 35.8 62.8 2.8 61.1 62.1 62.8 35.8 37./WWW 2.8 2.8. 2.8 37.6 2.8 37.7.WWWWS 2.8 35.6 35.8 32.8 37.",
+      "output_json": {
+        "text_sequence": "WWWWWWWWWWSWSWSWS - .WBASE - .com/PoPoPoPossesssessses.WWWWSWSWWWWWWSPSPS://WWWWW.WWSWSWSMSMSMSMSWSWSWSPSPSPSPSWSWSWSWWSWSMSWSWSWMSMSMSRSEWSWSWSHSHSMSMSMS/WWWWWWWWWSWWWWSMSMSRSRSRSRSWSWSWSKSWSWSWSWWWWWW.SWSWSWSRSRSRSMSMSMS,WWWWWMSMSMSWWWWW,WWWWSRSRSMSWSWSPSWSWSWBWSWSWS/PoPoRTWSWSWS.WWW.WMSWSWSMSRSRSMSRSRS/PoPownWSWSWSRFRFRFRFRSRSRS/WWWWS/WMSMSRSMSMSWSMSMS/Prs.WMSMS/ToToToTownWSWSRSMSMS/PoPoRPWSWSWSPGMSMSMSRFRFRFWSWSWSProProProPromoWSWSWS, WSWSWSMISMISMISMISMSMSMS (%), RFRFRFGMSMSMS 62.1 62.1 2.8 62.1 6, 2.8 9, 2.8 2.8 3, 2.8 2, 2.8 %, 2.8 35.8 62.1 62.0 2.8 62.8 62.1 61. 2.8 32.8 2.8 37. 2.8 5.8 62.1 35.8 35.8 62.8 2.8 61.1 62.1 62.8 35.8 37./WWW 2.8 2.8. 2.8 37.6 2.8 37.7.WWWWS 2.8 35.6 35.8 32.8 37.</s>"
+      },
+      "runtime_sec": 3.11401104927063,
+      "num_generated_tokens": 591,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:23"
+    },
+    {
+      "preset": "router_probe",
+      "prompt": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool,  \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\",  \"table_size\": \"none|small|large\", \"confidence\": number}.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 48,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true
+      },
+      "output_text": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. - - - - - - - - - - - - - - - - - - - - State to State: - |||||||||||||||||||||",
+      "output_json": {
+        "text_sequence": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. - - - - - - - - - - - - - - - - - - - - State to State: - |||||||||||||||||||||</s>"
+      },
+      "runtime_sec": 0.4964606761932373,
+      "num_generated_tokens": 154,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:23"
+    },
+    {
+      "preset": "eq_compact",
+      "prompt": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 160,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 2,
+        "repetition_penalty": 1.2,
+        "early_stopping": true
+      },
+      "output_text": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols. . Same Row - - Samp Se Sell - Call to Column Header - Came to Coll - Reader to Cotumn Cell 60.7 60.5 60.6 61.0 60 54.5 - All Columbus Realer , 4, 6) - Seatence to - Header to _ - | - ) - () - 2, 9, 4) - _ _ 6 2.1 - 62.1 - Header to ______________ - Standard - Hader - 1 - Meader - State - Headr - -1 - I - l - [ - i - ! - / - ' - E - a - = - : - L - 3 - A - \" -_ - 1. - Beader in - e - 0 - Le -",
+      "output_json": {
+        "text_sequence": ". Same Row - - Samp Se Sell - Call to Column Header - Came to Coll - Reader to Cotumn Cell 60.7 60.5 60.6 61.0 60 54.5 - All Columbus Realer , 4, 6) - Seatence to - Header to _ - | - ) - () - 2, 9, 4) - _ _ 6 2.1 - 62.1 - Header to ______________ - Standard - Hader - 1 - Meader - State - Headr - -1 - I - l - [ - i - ! - / - ' - E - a - = - : - L - 3 - A - \" -_ - 1. - Beader in - e - 0 - Le -</s>"
+      },
+      "runtime_sec": 1.2065460681915283,
+      "num_generated_tokens": 184,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:24"
+    },
+    {
+      "preset": "table_strict_md",
+      "prompt": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 480,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize. - Same Row - Same Column Column - Same Cell to Column Reader - Cell to Coll - - - - . - . . - - - Same to - - - Samples. ... - - Same Lown - - - Sale to - .. . ( ) - - Same To - . () - .s - - - Came - - - to - - to . - Same to to to - - Steam - - -. - - to to the - - - Sta - . to to to to ( ) - . 3. - . 3 - . 0 - . 10 - . 5 - . 1 - . 9 - . I - . 62.1 - . 2, - . 8 - . 60. . 0. . , . - to to . 0 . 2.8 - . 4 - . 30 - . 50 - . 56. . 3 . 3.00 - . 40 2, . 0.00 - . 2. . 8.00 . 5.00 . 5.8 . 4.00 2, 3.00 . 0.01 0.00 2, 2, 0.00 . 0000 0.00 0.00 3.00 0.00 0000 . 002 2, 2.8 0.00 , 2,2 2, , 0.00 60. 0.00 2.8 . 888 60. 2.8 2.8 3.00 2.8 , 2.8 60. 3.00 3.00 4.00 60. 2, 4, 4, 2, 33.3 35. 2.8 62.1 62.1 2.8 37. 2.8 38. 2.8 36.6 2.8 5.8 60. 60. 60 60. 5.8 35.8 60. 4.00 36.6 60. 5.6 60. 603 60. 60 2.8 36.4 36.3 60. 35.8 35.8 36.3 35. 60. 34.3 36.3 35.8 34.3 34.3 60.4 36.3 34.3 35.8 36.3 60.3 60.4 34.3 36.3 35.8 33.3 60.3 35.8 36.8 60.3 35.3 60 60.3 25.3 60. 24.3 60.2,",
+      "output_json": {
+        "text_sequence": "- Same Row - Same Column Column - Same Cell to Column Reader - Cell to Coll - - - - . - . . - - - Same to - - - Samples. ... - - Same Lown - - - Sale to - .. . ( ) - - Same To - . () - .s - - - Came - - - to - - to . - Same to to to - - Steam - - -. - - to to the - - - Sta - . to to to to ( ) - . 3. - . 3 - . 0 - . 10 - . 5 - . 1 - . 9 - . I - . 62.1 - . 2, - . 8 - . 60. . 0. . , . - to to . 0 . 2.8 - . 4 - . 30 - . 50 - . 56. . 3 . 3.00 - . 40 2, . 0.00 - . 2. . 8.00 . 5.00 . 5.8 . 4.00 2, 3.00 . 0.01 0.00 2, 2, 0.00 . 0000 0.00 0.00 3.00 0.00 0000 . 002 2, 2.8 0.00 , 2,2 2, , 0.00 60. 0.00 2.8 . 888 60. 2.8 2.8 3.00 2.8 , 2.8 60. 3.00 3.00 4.00 60. 2, 4, 4, 2, 33.3 35. 2.8 62.1 62.1 2.8 37. 2.8 38. 2.8 36.6 2.8 5.8 60. 60. 60 60. 5.8 35.8 60. 4.00 36.6 60. 5.6 60. 603 60. 60 2.8 36.4 36.3 60. 35.8 35.8 36.3 35. 60. 34.3 36.3 35.8 34.3 34.3 60.4 36.3 34.3 35.8 36.3 60.3 60.4 34.3 36.3 35.8 33.3 60.3 35.8 36.8 60.3 35.3 60 60.3 25.3 60. 24.3 60.2,</s>"
+      },
+      "runtime_sec": 4.010169982910156,
+      "num_generated_tokens": 516,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:28"
+    },
+    {
+      "preset": "wide_table_md",
+      "prompt": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1600,
+          "width": 1130
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.12,
+        "early_stopping": false
+      },
+      "output_text": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content. - - Header to Column Cell - - - - . - . All Column Reated (# 2, 4, 6) Column Related to Sentence - - - All - - - Sentence to Sentence to - - - Se . - - All Sendence to to - . Sentence to to Se . All - . . - Same . HASSE - - - Same - . to . , . RESE - . Reader - . Header - . _ . - to . - State - . Scale - . Send Send Send Send . - Send Send Send - . Please - to Send Send - to Send - , Send Send - Send Send - - Send - Send . Send - Send - to Center - . 3, Send Send Send 2, to Send Send Send _ Send Send - ) 2, Send - to to Send - Send 2, Send Send , to Send - - to Send 2, - to Send . 3 3, - Send - ) - Send - CONT - Send - you 2, - ) - , - Send Sender - to Sender - Send - - - Sender - ) - - - 2, 2, - - - _ - - - ) - 2, - _ _ _ _ - - _ _ - 2, to to to _ _ _ 3 | | , 3 | 3 | 62.1 62.1 61 | 2.8 2.8 | . 2.8 . | LL 2.8 6 2.8 , 2.8 YO 2.8 5.8 2.8 6.2 2.8 XO 2.8 LL | YO , YO YO | XO YO IO 2.8 IO YO 3 2.8 ROL 2.8 SHO YO XO XO IO XO | IO IO | HQ YO LL YO dd YO THAN YO UO YO WO YO ARE YO ROL YO HQ XO LL XO ROL XO , XO wor YO ll YO TAL YO MOR YO EO YO OU YO OO YO HL YO SHO XO HQ IO LL IO ROL IO , IO HQ 2.8 HQ LL LL ROL ROL LL HQ ROL | ROL WO XO dd XO THAN XO UO XO YR YO wor XO MOR XO WO IO dd IO SHO IO THAN IO UO IO WO LL WO ROL HQ HQ WO HQ | WO WO | dd LL dd ROL dd HQ dd WO dd dd | SHO LL , LL SHO HQ SHO dd SHO WO SHO ROL SHO | wor IO ll XO HL XO ll LL ll IO HL IO wor LL UO LL THAN LL MOR IO MOR LL 999 YO LOR YO STO YO USE YO MON YO 666 YO HH YO YS YO AUD YO YK YO YAR YO . YO 999 XO TAL XO ARE XO SHO SHO 2.8 dd 2.8 WO 2.8 ll WO MOR SHO , WO , | MOR | HL LL TAL IO TAL LL JR YO LS YO ISS YO TAI YO YM YO IH YO SN YO 866 YO RES YO SON YO 7% YO TOK YO 888 YO MARK YO LONG YO WW YO WAN YO JU YO 980 YO 0.00 YO UND YO GOR YO JR XO STO XO . XO 666 XO MON XO 999 IO . IO STO IO MON SHO THAN SHO MOR WO THAN 2.8 MOR 2.8 UO SHO . SHO UO 2.8 THAN , , SHO MON 2.8 MON , UO , THAN . LL . WO . UO . THAN WO UO WO CONT YO HAS YO 5.8 YO CONTROL YO 61.1 YO 60.5 2.8 38. 2.8 60.5 . 5.8 . 5.6 2.8 5.6 , 5.8 , CONTROL THE . 6.2 , 7.3 , 6.2 . CONTROL TO , LONG , ). . 7.3 .",
+      "output_json": {
+        "text_sequence": "- - Header to Column Cell - - - - . - . All Column Reated (# 2, 4, 6) Column Related to Sentence - - - All - - - Sentence to Sentence to - - - Se . - - All Sendence to to - . Sentence to to Se . All - . . - Same . HASSE - - - Same - . to . , . RESE - . Reader - . Header - . _ . - to . - State - . Scale - . Send Send Send Send . - Send Send Send - . Please - to Send Send - to Send - , Send Send - Send Send - - Send - Send . Send - Send - to Center - . 3, Send Send Send 2, to Send Send Send _ Send Send - ) 2, Send - to to Send - Send 2, Send Send , to Send - - to Send 2, - to Send . 3 3, - Send - ) - Send - CONT - Send - you 2, - ) - , - Send Sender - to Sender - Send - - - Sender - ) - - - 2, 2, - - - _ - - - ) - 2, - _ _ _ _ - - _ _ - 2, to to to _ _ _ 3 | | , 3 | 3 | 62.1 62.1 61 | 2.8 2.8 | . 2.8 . | LL 2.8 6 2.8 , 2.8 YO 2.8 5.8 2.8 6.2 2.8 XO 2.8 LL | YO , YO YO | XO YO IO 2.8 IO YO 3 2.8 ROL 2.8 SHO YO XO XO IO XO | IO IO | HQ YO LL YO dd YO THAN YO UO YO WO YO ARE YO ROL YO HQ XO LL XO ROL XO , XO wor YO ll YO TAL YO MOR YO EO YO OU YO OO YO HL YO SHO XO HQ IO LL IO ROL IO , IO HQ 2.8 HQ LL LL ROL ROL LL HQ ROL | ROL WO XO dd XO THAN XO UO XO YR YO wor XO MOR XO WO IO dd IO SHO IO THAN IO UO IO WO LL WO ROL HQ HQ WO HQ | WO WO | dd LL dd ROL dd HQ dd WO dd dd | SHO LL , LL SHO HQ SHO dd SHO WO SHO ROL SHO | wor IO ll XO HL XO ll LL ll IO HL IO wor LL UO LL THAN LL MOR IO MOR LL 999 YO LOR YO STO YO USE YO MON YO 666 YO HH YO YS YO AUD YO YK YO YAR YO . YO 999 XO TAL XO ARE XO SHO SHO 2.8 dd 2.8 WO 2.8 ll WO MOR SHO , WO , | MOR | HL LL TAL IO TAL LL JR YO LS YO ISS YO TAI YO YM YO IH YO SN YO 866 YO RES YO SON YO 7% YO TOK YO 888 YO MARK YO LONG YO WW YO WAN YO JU YO 980 YO 0.00 YO UND YO GOR YO JR XO STO XO . XO 666 XO MON XO 999 IO . IO STO IO MON SHO THAN SHO MOR WO THAN 2.8 MOR 2.8 UO SHO . SHO UO 2.8 THAN , , SHO MON 2.8 MON , UO , THAN . LL . WO . UO . THAN WO UO WO CONT YO HAS YO 5.8 YO CONTROL YO 61.1 YO 60.5 2.8 38. 2.8 60.5 . 5.8 . 5.6 2.8 5.6 , 5.8 , CONTROL THE . 6.2 , 7.3 , 6.2 . CONTROL TO , LONG , ). . 7.3 .</s>"
+      },
+      "runtime_sec": 9.000349283218384,
+      "num_generated_tokens": 1126,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:37"
+    },
+    {
+      "preset": "figure_bullets",
+      "prompt": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 180,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9
+      },
+      "output_text": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . - . - . - . - . - . . - . . - . - . - . . - . - . - . - . - . .. . . .",
+      "output_json": {
+        "text_sequence": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . - . - . - . - . - . . - . . - . - . - . . - . - . - . - . - . .. . . .</s>"
+      },
+      "runtime_sec": 1.2215964794158936,
+      "num_generated_tokens": 210,
+      "error": null,
+      "timestamp": "2025-08-20 06:45:39"
+    }
+  ],
+  "presets_run": [
+    "balanced_beam",
+    "eq_compact",
+    "fast_draft",
+    "figure_bullets",
+    "formula_friendly",
+    "long_page_strict",
+    "page_summary",
+    "router_probe",
+    "table_markdown",
+    "table_strict_md",
+    "universal_doc",
+    "wide_table_md"
+  ]
+}

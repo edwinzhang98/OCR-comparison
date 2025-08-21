@@ -1,0 +1,79 @@
+{
+  "image": "data/pdf_ocr_samples/2.jpg",
+  "image_name": "2.jpg",
+  "total_processing_time": 0.40796828269958496,
+  "questions": [
+    "What is the main title?",
+    "What is the x-axis label?",
+    "What is the y-axis label?",
+    "List any visible units or percentages.",
+    "What trend or pattern is described?"
+  ],
+  "results": [
+    {
+      "question": "What is the main title?",
+      "output_text": "second place",
+      "inference_time": 0.09924936294555664,
+      "total_tokens": 3,
+      "generation_kwargs": {
+        "max_new_tokens": 40,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "What is the x-axis label?",
+      "output_text": "second place",
+      "inference_time": 0.08455681800842285,
+      "total_tokens": 3,
+      "generation_kwargs": {
+        "max_new_tokens": 40,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "What is the y-axis label?",
+      "output_text": "second place",
+      "inference_time": 0.0852804183959961,
+      "total_tokens": 3,
+      "generation_kwargs": {
+        "max_new_tokens": 40,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "List any visible units or percentages.",
+      "output_text": "",
+      "inference_time": 0.05570840835571289,
+      "total_tokens": 1,
+      "generation_kwargs": {
+        "max_new_tokens": 40,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    },
+    {
+      "question": "What trend or pattern is described?",
+      "output_text": "second",
+      "inference_time": 0.08317327499389648,
+      "total_tokens": 2,
+      "generation_kwargs": {
+        "max_new_tokens": 40,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      }
+    }
+  ]
+}

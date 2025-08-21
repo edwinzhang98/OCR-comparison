@@ -1,0 +1,83 @@
+{
+  "image": "data/pdf_ocr_samples/12.jpg",
+  "image_name": "12.jpg",
+  "total_processing_time": 9.128421545028687,
+  "presets_tested": 5,
+  "results": [
+    {
+      "preset": "chart_analysis",
+      "prompt": "Analyze this chart or scientific diagram in detail. Describe the data, labels, axes, trends, and any text elements you can see. Focus on accuracy and completeness.",
+      "generation_kwargs": {
+        "max_new_tokens": 800,
+        "do_sample": true,
+        "temperature": 0.3,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "The image is a black and white photograph of an open book with the title \"Software Marketing.\" It appears to be an old photo, possibly from the early days of software marketing. The book's pages are visible, showcasing the content related to software market strategies.",
+      "inference_time": 2.0143747329711914,
+      "total_tokens": 60
+    },
+    {
+      "preset": "technical_description",
+      "prompt": "Provide a technical description of this image. Identify all text, numbers, symbols, and structural elements. Be precise and systematic in your analysis.",
+      "generation_kwargs": {
+        "max_new_tokens": 600,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.15,
+        "length_penalty": 1.0,
+        "early_stopping": true
+      },
+      "output_text": "The image is a close-up of the word \"Software\" written on a white background. The word \"Software\" is displayed prominently in the center of the image.",
+      "inference_time": 2.215859889984131,
+      "total_tokens": 39
+    },
+    {
+      "preset": "comprehensive_caption",
+      "prompt": "Create a comprehensive caption for this image. Include all visible text, data points, chart elements, and contextual information. Make it suitable for academic or technical documentation.",
+      "generation_kwargs": {
+        "max_new_tokens": 1000,
+        "do_sample": true,
+        "temperature": 0.4,
+        "top_p": 0.95,
+        "repetition_penalty": 1.2,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "The term \"Software Management\" is displayed in large white letters against the backdrop of an empty page with no other content.",
+      "inference_time": 0.9268438816070557,
+      "total_tokens": 27
+    },
+    {
+      "preset": "structured_analysis",
+      "prompt": "Analyze this image using a structured approach: 1) Identify the main elements, 2) Describe any text or labels, 3) Note data patterns or trends, 4) Summarize the overall purpose.",
+      "generation_kwargs": {
+        "max_new_tokens": 700,
+        "do_sample": true,
+        "temperature": 0.5,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "The image displays a close-up of the word \"Software\" in bold white letters against a black background. The word is clearly visible and stands out from its surroundings.",
+      "inference_time": 1.3164288997650146,
+      "total_tokens": 38
+    },
+    {
+      "preset": "precision_focused",
+      "prompt": "Describe this image with high precision. Pay special attention to exact text, numbers, symbols, and spatial relationships. Avoid speculation and focus on observable facts.",
+      "generation_kwargs": {
+        "max_new_tokens": 500,
+        "do_sample": false,
+        "num_beams": 4,
+        "repetition_penalty": 1.2,
+        "length_penalty": 1.1,
+        "early_stopping": true
+      },
+      "output_text": "The image is a close-up of the word \"Software\" written in all capital letters. The word is displayed prominently in the center of the image, occupying a significant portion of the frame. There are no other elements or distractions in the scene, making the word the main focus of the image.",
+      "inference_time": 2.654914140701294,
+      "total_tokens": 67
+    }
+  ]
+}

@@ -77,7 +77,7 @@ DEFAULT_AUTO_ROUTE = False
 PRESETS: Dict[str, Dict[str, Any]] = {
     # 速度快、确定性强的初筛；先看能否顺畅读出正文。
     "fast_draft": {
-        "task_prompt": "",  # 若 checkpoint 需要如 "<s_synthdog>" 等起始 token，请写在这里
+        "task_prompt": "<s_cord-v2>",  # 使用 cord-v2 任务 token
         "gen": {
             "max_new_tokens": 384,
             "num_beams": 1,
@@ -95,7 +95,7 @@ PRESETS: Dict[str, Dict[str, Any]] = {
 
     # 平衡的束搜索，提升结构稳定性，减少列表/表格重复。
     "balanced_beam": {
-        "task_prompt": "",
+        "task_prompt": "<s_cord-v2>",
         "gen": {
             "max_new_tokens": 768,
             "num_beams": 4,
@@ -113,7 +113,7 @@ PRESETS: Dict[str, Dict[str, Any]] = {
 
     # 面向长页面（多图/多公式/内容密集），以完整性为优先，牺牲一点速度。
     "long_page_strict": {
-        "task_prompt": "",
+        "task_prompt": "<s_cord-v2>",
         "gen": {
             "max_new_tokens": 1400,
             "num_beams": 3,
@@ -422,6 +422,11 @@ def run_once(
         task_prompt = str(preset_cfg.get("task_prompt", ""))
 
         inputs = processor(images=img, text=task_prompt, return_tensors="pt")
+        
+        # 确保 pixel_values 的 dtype 与模型一致
+        if inputs.get("pixel_values") is not None:
+            inputs["pixel_values"] = inputs["pixel_values"].to(model.dtype)
+
         inputs = {k: v.to(device) for k, v in inputs.items()}
 
         gen_kwargs = dict(preset_cfg.get("gen", {}))
@@ -441,12 +446,17 @@ def run_once(
         num_gen_tokens = int(seq.shape[-1]) if hasattr(seq, "shape") else None
 
         # 解码文本；若可解析为结构化 JSON，则同时给出
-        decoded = processor.batch_decode(seq, skip_special_tokens=False)[0]
-        output_text = decoded
+        decoded_with_specials = processor.batch_decode(seq, skip_special_tokens=False)[0]
+        output_text = processor.batch_decode(seq, skip_special_tokens=True)[0]
+        
+        # 尝试从包含特殊 token 的版本中解析 JSON
         try:
-            output_json = processor.token2json(decoded)
+            # 移除 task prompt 部分，避免干扰 JSON 解析
+            json_parse_target = decoded_with_specials.replace(task_prompt, "").strip()
+            output_json = processor.token2json(json_parse_target)
         except Exception:
-            output_json = None
+            # 如果 token2json 失败，尝试从纯文本中抽取
+            output_json = extract_json_from_text(output_text)
 
     except Exception as e:
         error = f"{type(e).__name__}: {e}"

@@ -1,0 +1,303 @@
+{
+  "image": "data/pdf_ocr_samples/3.jpg",
+  "model_id": "naver-clova-ix/donut-base",
+  "created_at": "2025-08-20 06:49:11",
+  "results": [
+    {
+      "preset": "fast_draft",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "<s_cord-v2> TABLEFORMERBASE 1 10 M - 2*512*768 TA B A S E I I O O O o o o r a m m m = 0.8 M + M 340 M - 0. 8 M + 0.002 M |10 M - 24*16*13 = 240 M - 2. *1525656565666666666666666666",
+      "output_json": {
+        "text_sequence": "TABLEFORMERBASE 1 10 M - 2*512*768 TA B A S E I I O O O o o o r a m m m = 0.8 M + M 340 M - 0. 8 M + 0.002 M |10 M - 24*16*13 = 240 M - 2. *1525656565666666666666666666</s>"
+      },
+      "runtime_sec": 3.811006784439087,
+      "num_generated_tokens": 89,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:15"
+    },
+    {
+      "preset": "balanced_beam",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4,
+        "length_penalty": 0.95
+      },
+      "output_text": "<s_cord-v2> TABLE TABLEFORMERBASE 1 10 M - 2*512*10101101101101111111111111 TABLEORMERBASE 140 M - 0.8 M + 0.02 M 340 M M - - 2*512*13 = M M M M = 0.8 0 0 0 0 8 8 8 8 6 8 8 8 9 9 9 9 3 4 0 0 0 M M M - M M M T M M M * M M TABLEPORMERLARGE 340 M - - 24*16*13 = 340 340 M - M - - 0. 0 8 8 0 0 0. 0 0 0 005 M M M + 0 0 0 3 8 8 3 8 8 8 3 3 8 8 5 8 8 8 0 8 8 3 0 8 8 9 8 8 8",
+      "output_json": {
+        "text_sequence": "TABLE TABLEFORMERBASE 1 10 M - 2*512*10101101101101111111111111 TABLEORMERBASE 140 M - 0.8 M + 0.02 M 340 M M - - 2*512*13 = M M M M = 0.8 0 0 0 0 8 8 8 8 6 8 8 8 9 9 9 9 3 4 0 0 0 M M M - M M M T M M M * M M TABLEPORMERLARGE 340 M - - 24*16*13 = 340 340 M - M - - 0. 0 8 8 0 0 0. 0 0 0 005 M M M + 0 0 0 3 8 8 3 8 8 8 3 3 8 8 5 8 8 8 0 8 8 3 0 8 8 9 8 8 8</s>"
+      },
+      "runtime_sec": 4.744048118591309,
+      "num_generated_tokens": 182,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:20"
+    },
+    {
+      "preset": "long_page_strict",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "early_stopping": false,
+        "repetition_penalty": 1.12,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "<s_cord-v2> TABLE TABLEFORMERBASE 1 10 M - 2*512*101010110110110111111111111111111111111 TABLEORMERBASE 140 M - 0.8 M M M M TABLEPORMERLARGE 340 M M - - 2*512*13 = + 0.02 M 340 M - - 0. 8 M + 0.002 M M TAPLEFORMERLARGE 240 M - - 2. *512*13 = M TAPALE M M M + 0.042 M M T TAPALEFORMERLERGE",
+      "output_json": {
+        "text_sequence": "TABLE TABLEFORMERBASE 1 10 M - 2*512*101010110110110111111111111111111111111 TABLEORMERBASE 140 M - 0.8 M M M M TABLEPORMERLARGE 340 M M - - 2*512*13 = + 0.02 M 340 M - - 0. 8 M + 0.002 M M TAPLEFORMERLARGE 240 M - - 2. *512*13 = M TAPALE M M M + 0.042 M M T TAPALEFORMERLERGE</s>"
+      },
+      "runtime_sec": 4.429995775222778,
+      "num_generated_tokens": 134,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:24"
+    },
+    {
+      "preset": "formula_friendly",
+      "prompt": "Transcribe math as LaTeX when clear; keep original text for body.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3,
+        "length_penalty": 1.0
+      },
+      "output_text": "Transcribe math as LaTeX when clear; keep original text for body. TABLEFORMERBASE 340 M - 0.8 M - 10 10 M - 2*512*13 = 240 M - - 0 8 M + 0.002 M TABLEFORMERLARGE 340 34 M - 1.0 M + 0.005M",
+      "output_json": {
+        "text_sequence": "TABLEFORMERBASE 340 M - 0.8 M - 10 10 M - 2*512*13 = 240 M - - 0 8 M + 0.002 M TABLEFORMERLARGE 340 34 M - 1.0 M + 0.005M</s>"
+      },
+      "runtime_sec": 3.660210132598877,
+      "num_generated_tokens": 72,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:28"
+    },
+    {
+      "preset": "table_markdown",
+      "prompt": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 900,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text. TABLEFORMERBASE 1 0 M - 2* = 140 100 100 100100 100 100000000000000000 TAILE FORMERBSE 240 M M - - 0.8 M + 0.02 M 340 M - 1.0 M + 0.00M",
+      "output_json": {
+        "text_sequence": "TABLEFORMERBASE 1 0 M - 2*<unk> = 140 100 100 100100 100 100000000000000000 TAILE FORMERBSE 240 M M - - 0.8 M + 0.02 M 340 M - 1.0 M + 0.00M</s>"
+      },
+      "runtime_sec": 1.1863129138946533,
+      "num_generated_tokens": 79,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:29"
+    },
+    {
+      "preset": "page_summary",
+      "prompt": "Provide a concise one-sentence summary of the page content.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 64,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.92
+      },
+      "output_text": "Provide a concise one-sentence summary of the page content. TA BLEFORMERBSE I 10 M - 2*512*768 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 M M M M TABLEFORMERLARGE 240 M M - 2*512*10 0 0 0 0 0 0 0 0 0",
+      "output_json": {
+        "text_sequence": "TA BLEFORMERBSE I 10 M - 2*512*768 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 M M M M TABLEFORMERLARGE 240 M M - 2*512*10 0 0 0 0 0 0 0 0 0</s>"
+      },
+      "runtime_sec": 3.5652670860290527,
+      "num_generated_tokens": 80,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:33"
+    },
+    {
+      "preset": "universal_doc",
+      "prompt": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1000,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.W",
+      "output_json": {
+        "text_sequence": "W</s>"
+      },
+      "runtime_sec": 0.17015981674194336,
+      "num_generated_tokens": 228,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:33"
+    },
+    {
+      "preset": "router_probe",
+      "prompt": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool,  \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\",  \"table_size\": \"none|small|large\", \"confidence\": number}.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 48,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true
+      },
+      "output_text": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}.,\" ||||||||||||||||||||||||||||||||||||||||||||",
+      "output_json": {
+        "text_sequence": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}.,\" ||||||||||||||||||||||||||||||||||||||||||||</s>"
+      },
+      "runtime_sec": 0.3108086585998535,
+      "num_generated_tokens": 154,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:33"
+    },
+    {
+      "preset": "eq_compact",
+      "prompt": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 160,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 2,
+        "repetition_penalty": 1.2,
+        "early_stopping": true
+      },
+      "output_text": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols. = 1 10 M - 0.8 M + 0.002 M T T A A B B E E R R BASE 340 M M . 1.0 - 2*512*13= = 0 8 M 4 0.005M M = = *515*1024 240 M I - 1.0 M 1 + 0.002 M r r m m - - 0.52*7( ) - M 340 34 34 M 110 M S - -1.0 -8 -3 - 3 - 5 - 1 0 -4 -5 -2 -6- 3 0 M 1110 - , - 30 - 40 M 10 - 20 - 104545 -",
+      "output_json": {
+        "text_sequence": "= 1 10 M - 0.8 M + 0.002 M T T A A B B E E R R BASE 340 M M . 1.0 - 2*512*13= = 0 8 M 4 0.005M M = = *515*1024 240 M I - 1.0 M 1 + 0.002 M r r m m - - 0.52*7( ) - M 340 34 34 M 110 M S - -1.0 -8 -3 - 3 - 5 - 1 0 -4 -5 -2 -6- 3 0 M 1110 - , - 30 - 40 M 10 - 20 - 104545 -</s>"
+      },
+      "runtime_sec": 1.0842623710632324,
+      "num_generated_tokens": 159,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:34"
+    },
+    {
+      "preset": "table_strict_md",
+      "prompt": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 480,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize. 1 10 M - 2*512*768 T T T TABLEFORMERBASE 1 10 10 M - - 0.8 M - - M - M - - *512*13 0.8 0.8 2*510 M - - 2*512*768 12*12*13 = 1 10 10 10 10 12*13 M - - - M * - - M M - - 1 10 10 12 10 10 10 M M - M M M - 10 M - 10 10 10 11 10 10 10 0 10 10 M + M - M 1 10 M *5 10 M - M 10 10 M 1 10 10 0 M - 10 0 10 M - 0 10 10 10 14 10 10 M 340 M - 10 12*5 10 10 10 13 10 10 M 10 10 10 3 10 10 10 100 10 10 10 16 10 10 10",
+      "output_json": {
+        "text_sequence": "1 10 M - 2*512*768 T T T TABLEFORMERBASE 1 10 10 M - - 0.8 M - - M - M - - *512*13 0.8 0.8 2*510 M - - 2*512*768 12*12*13 = 1 10 10 10 10 12*13 M - - - M * - - M M - - 1 10 10 12 10 10 10 M M - M M M - 10 M - 10 10 10 11 10 10 10 0 10 10 M + M - M 1 10 M *5 10 M - M 10 10 M 1 10 10 0 M - 10 0 10 M - 0 10 10 10 14 10 10 M 340 M - 10 12*5 10 10 10 13 10 10 M 10 10 10 3 10 10 10 100 10 10 10 16 10 10 10</s>"
+      },
+      "runtime_sec": 1.3013391494750977,
+      "num_generated_tokens": 216,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:35"
+    },
+    {
+      "preset": "wide_table_md",
+      "prompt": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1600,
+          "width": 1130
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.12,
+        "early_stopping": false
+      },
+      "output_text": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content. TABLEFORMERBASE 1 10 M - 2*512*768 + 12*12*13 = 110 M - 0.8 M - + 0.02 M TA TA TA TA SLARGE 1 10 10 M - - *512*76 1 1 1 1 0 M - - 2*5124 + 12*13 12*768 = 0.8 0 0 0 0 M M - M - - M - 0 8 M - - - M 0.8 - M M - - 0. 2*1512*13 0. M - 0 0 0. M M - 2 *5 M - *5 M M - 3 0 0. 0 0. 2 *15 M - M + M - *13 M - 0 M *13 M *13 *13 *1024 *13 *15 *13 *16 *13 * 13 *13 *194 *13 *168 *13 *12*13 *13 = *13 *14 *13 M M - 1024 * 13 M - 20 1024 *13SE",
+      "output_json": {
+        "text_sequence": "TABLEFORMERBASE 1 10 M - 2*512*768 + 12*12*13 = 110 M - 0.8 M - + 0.02 M TA TA TA TA SLARGE 1 10 10 M - - *512*76 1 1 1 1 0 M - - 2*5124 + 12*13 12*768 = 0.8 0 0 0 0 M M - M - - M - 0 8 M - - - M 0.8 - M M - - 0. 2*1512*13 0. M - 0 0 0. M M - 2 *5 M - *5 M M - 3 0 0. 0 0. 2 *15 M - M + M - *13 M - 0 M *13 M *13 *13 *1024 *13 *15 *13 *16 *13 * 13 *13 *194 *13 *168 *13 *12*13 *13 = *13 *14 *13 M M - 1024 * 13 M - 20 1024 *13SE</s>"
+      },
+      "runtime_sec": 1.6256413459777832,
+      "num_generated_tokens": 251,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:37"
+    },
+    {
+      "preset": "figure_bullets",
+      "prompt": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 180,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9
+      },
+      "output_text": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values. T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T B B B E E OR R R R ARGE ALEFORMER LARGE M M M M - 2*5 2*512*768 M M M M M = 0.3 M 10 M - 0.8 2*5.0 M M M = 1010: .0.2.3 = 10.9.9: 0.0.4.0.0.B3.2.8:9B.20.2:B.BASE 0.BASE.B.B.B.O.B.B3.B.B3.B.B.B.B",
+      "output_json": {
+        "text_sequence": "T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T B B B E E OR R R R ARGE ALEFORMER LARGE M M M M - 2*5 2*512*768 M M M M M = 0.3 M 10 M - 0.8 2*5.0 M M M = 1010: .0.2.3 = 10.9.9: 0.0.4.0.0.B3.2.8:9B.20.2:B.BASE 0.BASE.B.B.B.O.B.B3.B.B3.B.B.B.B</s>"
+      },
+      "runtime_sec": 1.0099437236785889,
+      "num_generated_tokens": 210,
+      "error": null,
+      "timestamp": "2025-08-20 06:49:38"
+    }
+  ],
+  "presets_run": [
+    "balanced_beam",
+    "eq_compact",
+    "fast_draft",
+    "figure_bullets",
+    "formula_friendly",
+    "long_page_strict",
+    "page_summary",
+    "router_probe",
+    "table_markdown",
+    "table_strict_md",
+    "universal_doc",
+    "wide_table_md"
+  ]
+}

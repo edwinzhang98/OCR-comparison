@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/1.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure shows a mathematical equation involving matrices and vectors. The equation is \\(\\bar{A} = \\frac{QK^{\\top}}{\\sqrt{d_K}}\\), where \\(Q\\) and \\(K\\) are matrices, and \\(d_K\\) is a scalar. Additionally, there is another equation \\(\\hat{A}\\), which is the difference between \\(A\\) and the left-hand side of the first equation. The main trend of the figure is to illustrate the relationship between these matrices and scalars in a mathematical context."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image displays a mathematical equation involving matrices and vectors. The equation is structured as follows:\n\n\\[\n\\bar{A} = \\frac{QK^\\top}{\\sqrt{d_K}}, \\quad A = \\bar{K} + \\hat{A}\n\\]\n\nKey components of the equation include:\n\n1. **\\(\\overline{A}\\)**: This represents a matrix or vector that is being defined or calculated.\n2. **\\(Q\\) and \\(K\\)**: These are matrices or vectors involved in the equation. \\(Q\\) is multiplied by \\(K\\) and then transposed (\\(^\\top\\)) to form a new matrix.\n3. **\\[d_K\\]**: This appears to be the denominator of a fraction, where \\(d_K\\) is likely a scalar or a diagonal matrix.\n4. **Square Root (\\(\\sqrt{}\\))**: The square root function is applied to the denominator, \\(\\sqrt{[d_K]}\\).\n5. **Equality Sign (\\(=\\))**: Indicates that the left-hand side equals the right-hand side.\n6. **Matrix Addition (\\(+\\))**: Shows that matrix \\(A\\) is the sum of matrix \\(\\overrightarrow{K}\\) and another matrix or term denoted by \\(\\hat A\\).\n\nThe equation seems to be related to linear algebra, possibly in the context of signal processing, machine learning, or data analysis, where matrices and their transformations play a crucial role."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure shows a mathematical equation where A is equal to the sum of two terms. The first term is the product of Q, K transpose, and the square root of d sub K. The second term is the sum of A and hat A."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image contains a mathematical equation that appears to be related to linear algebra or matrix operations. The equation is as follows:\n\n\\[\n\\bar{A} = \\frac{QK^{\\top}}{\\sqrt{d_K}}, \\quad A = \\bar{K} + \\hat{A}\n\\]\n\n### Description:\n\n1. **Axes and Units:**\n   - There are no axes or units present in the image. This is a purely mathematical equation without graphical representation.\n\n2. **Labels:**\n    - The equation uses several variables and symbols:\n      - \\(\\bar{Q}\\): Represents a vector or matrix.\n      - \\(K\\): Represents another vector or a matrix.\n        - \\(QK\\top\\): Indicates the product of \\(Q\\) and the transpose of \\(K\\) (\\(K^T\\)).\n      -  \\(\\sqrt{dk}\\): Indicates a square root operation on \\(d_K\\).\n      - The right-hand side of the equation involves:\n        - \\((\\bar{\\bar{}} + \\bar{\\hat{}})\\): This seems to represent a sum of two terms, where \\(\\hat{K}\\) and \\(\\tilde{A}\\) are likely matrices or vectors.\n\n3. **Trends and Patterns:**\n  - The primary trend in this equation is the manipulation of matrices and vectors through various operations such as multiplication, transposition, and addition.\n  - It appears to involve normalization or scaling, as indicated by the division by \\(\\frac{1}{\\sqrt{DK}}\\), which is a common operation in linear algebra to normalize vectors or matrices.\n  – The equation suggests a transformation or decomposition of a matrix \\(A\\) into components \\(\\overline{A}, \\hat{\\bar{\\tilde{\\bar{}}}} \\), and \\(( \\hat{} + \\tilde{} )\\).\n\n### Analysis:\n\n- **Normalization:** The term \\(\\left(\\frac{\\bar Q K^{\\text{T}}}{\\text{sqrt}(d_K)}\\right)\\) suggests normalization, where the product \\(Q K^T\\) is divided by the square root of \\(d_k\\). This is often used to scale the resulting vector or to ensure that the resulting matrix has certain properties (e.g., unit length or specific eigenvalues).\n  \n- **Decomposition:** The equation on the right-hand-side \\(A = \\overline{\\bar A} + (\\hat A + \\overrightarrow{\\hat A"
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

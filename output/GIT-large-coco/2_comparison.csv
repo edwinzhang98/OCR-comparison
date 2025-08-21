@@ -1,0 +1,6 @@
+preset,output_text,prompt,inference_time,total_tokens,gen_do_sample,gen_early_stopping,gen_length_penalty,gen_max_new_tokens,gen_no_repeat_ngram_size,gen_num_beams,gen_repetition_penalty,gen_temperature,gen_top_p
+chart_analysis,,"Analyze this chart or scientific diagram in detail. Describe axes, labels, units, legends, trends, and embedded text. Be comprehensive and accurate.",0.019855737686157227,1,True,,,180,3.0,,1.15,0.6,0.9
+technical_description,this is an example of how to use the text.,"Provide a technical description. Identify text, numbers, symbols, axes ranges, and structural elements. Be precise and systematic.",0.28600287437438965,12,False,True,1.1,140,,4.0,1.2,,
+comprehensive_caption,,"Create a comprehensive caption suitable for academic documentation. Include visible text, chart elements, data patterns, and context.",0.026377201080322266,1,True,,,220,4.0,,1.25,0.7,0.95
+structured_analysis,each type of text is divided into two,"Structured analysis: (1) main elements, (2) text/labels, (3) data patterns/trends, (4) overall purpose.",0.191497802734375,9,True,,,160,3.0,,1.1,0.65,0.9
+precision_focused,each of these words are represented by a number of different,"Describe with high precision. Focus on exact text, numbers, symbols, and spatial relations. Avoid speculation; only observable facts.",0.2734231948852539,12,False,True,1.2,120,,5.0,1.25,,

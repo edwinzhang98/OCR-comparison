@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/16.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure represents the formula for calculating attention weights in a neural network, where \\( \\text{Attn}(H) \\) is the attention output, \\( \\softmax(A) \\cdot V \\) represents the weighted sum of the input \\( V \\), and \\( A \\) are the attention weights."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image displays a mathematical equation related to attention mechanisms in the context of machine learning or artificial intelligence. The equation is:\n\n\\[ \\text{Attn}(H) = \\operatorname{softmax}(A) V \\]\n\nKey components of the equation include:\n\n1. **Attn(H)**: This represents the attention function applied to the hidden state \\( H \\).\n2. **softmax(A)**: The softmax function is applied to matrix \\( A \\), which is likely a transformation of the input data.\n3. **V**: This is a matrix or vector that is multiplied by the output of the softmax function.\n\nThe equation suggests that the attention mechanism computes a weighted sum of the hidden states, where the weights are determined by the softmax of the transformed input \\(A\\). This weighted sum is then multiplied by a matrix \\(V\\) to produce the final attention output."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nA graph with Attn(H) on the y-axis and softmax(A) on the x-axis."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image provided is a mathematical equation that represents the attention mechanism in the context of neural networks, specifically in the formulation of the attention function \\( \\text{Attn}(H) \\). The equation is:\n\n\\[ \\textbf{Atten}(H)=\\text{softmax}(\\textbf{\\textit{A}})\\textbf{T} \\]\n\nHere's a detailed description of the components of the equation:\n\n- **Atten(H)**: This represents the output of the Attention mechanism, which is a weighted sum of the input vectors.\n- **softmax(A)**: The softmax function is applied to the matrix \\(\\text{\\textbf A}\\). The softmax is a function that takes a vector of real numbers and transforms it into a probability distribution, where each element is between 0 and 1 and the sum of all elements is 1.\n- \\(\\mathbf{A}\\): This is a matrix that contains the scores or weights assigned to each element in the input sequence. These scores are typically computed based on the similarity between the input elements and a query vector.\n- \\( \\mathbf{T}\\): Represents the input to the attention layer, which could be a sequence of vectors.\n\nThe equation essentially states that the output \\( \\mathrm{Att}(H)\\) is obtained by applying the softmax function to the scores in matrix \\({\\mathbf A} \\), and then multiplying the resulting probabilities by the input \\(\\mathrm{T}\\).\n\nThis equation is fundamental in the field of natural language processing (NLP) and other areas of machine learning where attention mechanisms are used to focus on specific parts of the data that are most relevant for the task at hand."
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

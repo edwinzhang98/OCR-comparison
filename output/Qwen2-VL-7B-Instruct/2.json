@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/2.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure illustrates a transformer model with self-attention mechanisms, showing how different tokens and segments are processed. The left side of the figure depicts the input tokens and their corresponding attention biases, while the right side shows the attention bias scalars for different tokens. The model uses learnable structure-enforced attention biases to enhance its performance."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image presents a diagram of a neural network architecture, specifically focusing on a transformer model with self-attention mechanisms. The diagram is divided into two main sections: the left side and the right side.\n\n**Left Side:**\n- The left side of the diagram shows two layers of transformers, each labeled as \"Transformer (Self Attention).\"\n- Each transformer layer processes a sequence of input tokens, denoted by \\( h^n \\) and \\( h^1 \\), where \\( n \\) represents the layer number.\n- The input tokens include various features such as \"title,\" \"length,\" \"Screwed,\" \"Up,\" \"5:02,\" \"Ghetto,\" and \"Queen.\"\n- The output of each transformer layer is represented by \\( g_0, g_1, \\ldots, g_{10} \\) for the first layer and \\( p_0 \\) through \\( p_{11} \\), \\( z_{0}, z_{1}, z_2 \\), and so on, for the second layer.\n- There is a vertical dashed line separating the input tokens from the output tokens, indicating the flow of information through the layers.\n\n**Right Side (Attention Bias Visualization):**\n- On the right, there is a color-coded grid representing attention bias scalars.\n- Each cell in the grid corresponds to a pair of tokens (e.g., \"query\" and \"title\").\n- The colors range from red to black, indicating different levels of attention bias, with red representing higher bias and black representing lower bias.\n- Labels such as \"[CLS],\" \"query,\" \"[SEP],\" \"Title,\" \"Length,\" and others are shown along the top and left sides of the grid.\n- A caption at the bottom of the right section reads: \"Learnable structure enforced attention bias scalar. We use 13 types of attention biases based on task-independent relation between header, row, column, text, etc.\"\n\n**Key Points:**\n1. The architecture involves two transformer layers, each with its own set of input and output tokens.\n2. The attention bias visualization helps in understanding how different pairs of tokens are weighted during the attention process.\n3. The use of learnable structure enforces attention biases, which can be task-independent and based on various relations between tokens.\n\nThis diagram provides a detailed view of how a transformer network processes input data and how attention biases are applied to enhance the model's performance."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure shows a Transformer model with self-attention layers and attention bias scalars based on task-independent relations between header, row, column, text, etc."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure is a diagram illustrating a model architecture, specifically focusing on attention mechanisms within a Transformer model. The diagram is divided into two main sections: the left side shows the input and output layers, while the right side displays a matrix of attention bias scalars.\n\n### Left Side:\n- **Input Layer**: The input consists of tokens labeled as `[CLS]`, `query`, `[SEP]`, and various other tokens like `title`, `length`, `Screwed`, `Up`, `5:02`, `Ghetto`, `Queen`, and `50:00`. These tokens are fed into two Transformer layers.\n- **Transformer Layers**: There are two Transformer blocks, each with self-attention mechanisms. The first layer (`h^1`) and the second layer (`hn`) process these tokens through self-attentions.\n- The output of the second Transformer layer is represented by `h^2` and `h^n`.\n\n### Right Side:\nThe right side of the figure shows a matrix with 13 types of attention biases based on task-independent relations between header, row, column, text, etc. Each cell in the matrix is colored differently, representing different attention bias values. The colors range from red to black, indicating varying levels of attention weights.\n\n### Labels and Units:\n- The tokens are labeled with specific identifiers such as `[CLSL]`, `[SEPL]`, etc.\n- Attention bias scalors are represented by a matrix where each cell corresponds to a specific type of attention relation.\n\n### Trends:\n- There is a clear trend of attention being focused on certain tokens and biases, as indicated by the color intensity and distribution in the attention bias matrix.\n- Different tokens and attention biases have different levels of importance, as seen by the varying colors and intensities in the right matrix.\n\n### Conclusion:\nThe figure illustrates how attention mechanisms in a Transformer architecture can be influenced by task-independent biases, which are encoded in the form of attention scalors. These scalors help the model to focus on relevant parts of the input data, improving its performance on various tasks."
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

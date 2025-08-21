@@ -1,0 +1,62 @@
+{
+  "image": "data/pdf_ocr_samples/14.jpg",
+  "model_id": "Qwen/Qwen2-VL-7B-Instruct",
+  "results": [
+    {
+      "preset": "concise_default",
+      "prompt": "You are an expert science figure and chart captioner. Write a concise, accurate caption describing what the figure shows, axes, units, and the main trend.",
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe figure is a table comparing the performance of two models, TABLEFORMERBASE and SEQ, across various tasks. The tasks are listed in the left column, and for each task, the table shows the accuracy scores for both models. The accuracy scores are presented in two columns, labeled \"ALL\" and \"SEQ.\" The \"All\" column shows the average accuracy across all tasks, while the \"SEQ\" column focuses on sequential tasks."
+    },
+    {
+      "preset": "long_detailed",
+      "prompt": "Analyze the figure carefully and write a detailed caption. Include key entities, labels/values, and trends. Avoid hallucination; describe only what is visible.",
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "do_sample": false,
+        "num_beams": 3,
+        "repetition_penalty": 1.07,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nThe image is a table comparing the performance of two models, TABLEFORMERBASE and SEQ, across various tasks. The table is divided into two main columns: \"ALL\" and \"SEQ\". The rows list different types of tasks, such as \"Same Row\", \"Same Column\", and \"All Column Related (# 2, 4, 6)\". For each task, there are two values: one for TABLEFORMERPBASE and one for SEQ. The values range from around 29.3 to 62.1. For example, for the task \"Same Cell\", both models achieve a score of 61.8, while for \"Cell to Column Header\", the scores are 60.7 and 36.6, respectively."
+    },
+    {
+      "preset": "strict_beam",
+      "prompt": "Provide a precise caption focusing on axes, units, and relationships. Be factual and terse.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": false,
+        "num_beams": 5,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nA table with two columns, one labeled \"ALL\" and the other labeled \"SEQ\". The rows are labeled with different types of relationships, such as \"Same Row\", \"Same Column\", \"Same Cell\", and so on. The values in the \"ALL\" column range from 2.8 to 62.1, while those in the \"SEQ\" column are generally lower, ranging from 29.3 to 38.4."
+    },
+    {
+      "preset": "creative_sample",
+      "prompt": "Describe the chart with clarity. Mention axes, units, labels, and any visible trends.",
+      "generation_kwargs": {
+        "max_new_tokens": 512,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "num_beams": 1,
+        "repetition_penalty": 1.02,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "user\nDescribe the figure precisely.\nassistant\nHere a is a table depicting the performance of different models on various tasks. The table has two main columns: \"ALL\" and \"SEQ\". The rows represent different tasks, such as \"Same Row\", \"Same Column\", \"Cell to Column Header\", etc. The values in the table are percentages, indicating the accuracy or performance of the models on these tasks.\n\n- The \"ALL column\" shows the overall performance of a model across all tasks.\n- The values under \"SEQ\" likely represent the performance on sequential tasks or a specific subset of tasks.\n\nThe table also includes a header row labeled \"TABLEFORMERBASE\", which seems to be the name of the model being evaluated. The numbers in this row correspond to the performance metrics for this model across different tasks.\n\nOverall, the table provides a clear comparison of the performance across different models and tasks, with the \"SEQ column\" showing a more focused performance metric."
+    }
+  ],
+  "presets_run": [
+    "concise_default",
+    "long_detailed",
+    "strict_beam",
+    "creative_sample"
+  ]
+}

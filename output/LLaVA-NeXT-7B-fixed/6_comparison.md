@@ -1,0 +1,101 @@
+# LLaVA-NeXT-7B Comparison for 6.jpg
+
+**Total Processing Time:** 17.93s
+
+## Results Comparison
+
+### chart_analysis
+
+**Prompt:** Analyze this chart or scientific diagram in detail. Describe the data, labels, axes, trends, and any text elements you can see. Focus on accuracy and completeness.
+
+**Output:** The image displays a graph with two different colors of red and pink representing two distinct categories. There are several words written on the graph, including "Male" and "Female." The graph seems to be related to gender or sex, as it is divided into these two sections.
+
+**Inference Time:** 2.10s
+**Total Tokens:** 60
+
+**Generation Parameters:**
+- max_new_tokens: 800
+- do_sample: True
+- temperature: 0.3
+- top_p: 0.9
+- repetition_penalty: 1.1
+- no_repeat_ngram_size: 3
+
+---
+
+### technical_description
+
+**Prompt:** Provide a technical description of this image. Identify all text, numbers, symbols, and structural elements. Be precise and systematic in your analysis.
+
+**Output:** The image displays a table with two columns. The first column is labeled "Male" and the second column is labeled "Female." There are two rows in the table, with the first row containing the word "Queen" in the "Female" column, and the second row containing the word "King" in the "Male" column.
+
+**Inference Time:** 3.50s
+**Total Tokens:** 79
+
+**Generation Parameters:**
+- max_new_tokens: 600
+- do_sample: False
+- num_beams: 3
+- repetition_penalty: 1.15
+- length_penalty: 1.0
+- early_stopping: True
+
+---
+
+### comprehensive_caption
+
+**Prompt:** Create a comprehensive caption for this image. Include all visible text, data points, chart elements, and contextual information. Make it suitable for academic or technical documentation.
+
+**Output:** The graph displays the results of an experiment involving two different types of food - one being "Male" (left side) and another labeled as "Female Queen" (right side). Each type is represented by three bars on the x-axis, with additional labels indicating specific values in each category. The y-axis represents the amount of energy expended during consumption, measured in units like calories per hour. This visual representation provides insights into how these distinctive dishes impact human energy levels over time.
+
+**Inference Time:** 3.57s
+**Total Tokens:** 107
+
+**Generation Parameters:**
+- max_new_tokens: 1000
+- do_sample: True
+- temperature: 0.4
+- top_p: 0.95
+- repetition_penalty: 1.2
+- no_repeat_ngram_size: 4
+
+---
+
+### structured_analysis
+
+**Prompt:** Analyze this image using a structured approach: 1) Identify the main elements, 2) Describe any text or labels, 3) Note data patterns or trends, 4) Summarize the overall purpose.
+
+**Output:** The image displays two different sections of information. One section has a graphic design and reads "Male" at the top. Below it, there is a description of a person that includes their gender, age, and occupation. In contrast, the other section features a woman's name, Queen Elizabeth II, along with her age and occupation as queen. There are no graphs or images in these descriptions. Overall, the image presents two distinct sets of information related to people - one for men and another for women.
+
+**Inference Time:** 3.67s
+**Total Tokens:** 107
+
+**Generation Parameters:**
+- max_new_tokens: 700
+- do_sample: True
+- temperature: 0.5
+- top_p: 0.9
+- repetition_penalty: 1.1
+- no_repeat_ngram_size: 3
+
+---
+
+### precision_focused
+
+**Prompt:** Describe this image with high precision. Pay special attention to exact text, numbers, symbols, and spatial relationships. Avoid speculation and focus on observable facts.
+
+**Output:** The image displays a table with two columns. The first column is labeled "Male" and the second column is labeled "Female." In the first column, there are three rows of text. The first row contains the word "Queen," the second row contains the word "King," and the third row contains the word "Queen." In the second column, there are also three rows of text. The first row contains the word "Queen," the second row contains the word "King," and the third row contains the word "Queen."
+
+**Inference Time:** 5.09s
+**Total Tokens:** 119
+
+**Generation Parameters:**
+- max_new_tokens: 500
+- do_sample: False
+- num_beams: 4
+- repetition_penalty: 1.2
+- length_penalty: 1.1
+- early_stopping: True
+
+---
+

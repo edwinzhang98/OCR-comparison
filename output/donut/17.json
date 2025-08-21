@@ -1,0 +1,303 @@
+{
+  "image": "data/pdf_ocr_samples/17.jpg",
+  "model_id": "naver-clova-ix/donut-base",
+  "created_at": "2025-08-20 06:46:52",
+  "results": [
+    {
+      "preset": "fast_draft",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 384,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "<s_cord-v2> Herzig et al. (2020) Eisenschlos et al .(2020) Eisenschloset al. (202) et al (2021) 67. 71.0 7. - 40 44 8 46. _ -1 31.3 39.7 TAPASE inter TAPLEFORMERBASE 66.8 70.3 36.9 0.4.6464646414949493939392929292826262636363636569593939999999999999996989393933333333333 Hergergergergers,Heresserssesssesssessed.SPSPSPSSSSSSSSESSESSESSISSISSISTSSPSPPPPPPSPSPSPRPRPRPHRPPPPPpppppppppppsperspersperperPerPerPerStrStrStr",
+      "output_json": {
+        "text_sequence": "Herzig et al. (2020) Eisenschlos et al .(2020) Eisenschloset al. (202) et al (2021) 67. 71.0 7. - 40 44 8 46.<unk> _ -1 31.3 39.7 TAPASE inter TAPLEFORMERBASE 66.8 70.3 36.9 0.4.6464646414949493939392929292826262636363636569593939999999999999996989393933333333333 Hergergergergers,Heresserssesssesssessed.SPSPSPSSSSSSSSESSESSESSISSISSISTSSPSPPPPPPSPSPSPRPRPRPHRPPPPPpppppppppppsperspersperperPerPerPerStrStrStr</s>"
+      },
+      "runtime_sec": 6.967808485031128,
+      "num_generated_tokens": 182,
+      "error": null,
+      "timestamp": "2025-08-20 06:46:59"
+    },
+    {
+      "preset": "balanced_beam",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 768,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 4,
+        "length_penalty": 0.95
+      },
+      "output_text": "<s_cord-v2> Herzig et al. (2020) Eisenschlos et al. (2020) Eisenschlos at al. (2021) et al. (1921) 67.2 71.0 71.7 0.4.8 46. - - 31.3 39.7 66.8 70.3 TAPASBASE inter TAPASBLEFORMERBASE TARGE TABARGE al.(2021) 27.2 0.2 0.) 67.2 40.4 71.4.4.6.6.4.5.6.5.5.9.6..6.3.6.9..9.9.3.9.",
+      "output_json": {
+        "text_sequence": "Herzig et al. (2020) Eisenschlos et al. (2020) Eisenschlos at al. (2021) et al. (1921) 67.2 71.0 71.7 0.4.8 46.<unk> - - 31.3 39.7 66.8 70.3 TAPASBASE inter TAPASBLEFORMERBASE TARGE TABARGE al.(2021) 27.2 0.2 0.) 67.2 40.4 71.4.4.6.6.4.5.6.5.5.9.6.<unk>.6.3.6.9.<unk>.9.9.3.9.</s>"
+      },
+      "runtime_sec": 7.943388223648071,
+      "num_generated_tokens": 151,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:07"
+    },
+    {
+      "preset": "long_page_strict",
+      "prompt": "<s_cord-v2>",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "early_stopping": false,
+        "repetition_penalty": 1.12,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "<s_cord-v2> Herzig et al. (2020) Eisenschlos et al. (2020) Eisenschlos at al. (2021) et al. (1921) 67.2 71.0 71.77777777877877877877777777771777777707070707071011011011011111111111111111111114141414242424242626262623232323333333333333333333333332323232223232332333333333333333333 Herz Herz Herz HerzHerHerHerHers Herz Herz Herz.HerHerHere Herz Herz Herz,HerHerssssSssssperspersperspersss'sssStrStrStrStrsss.sss",
+      "output_json": {
+        "text_sequence": "Herzig et al. (2020) Eisenschlos et al. (2020) Eisenschlos at al. (2021) et al. (1921) 67.2 71.0 71.77777777877877877877777777771777777707070707071011011011011111111111111111111114141414242424242626262623232323333333333333333333333332323232223232332333333333333333333 Herz Herz Herz HerzHerHerHerHers Herz Herz Herz.HerHerHere Herz Herz Herz,HerHerssssSssssperspersperspersss'sssStrStrStrStrsss.sss</s>"
+      },
+      "runtime_sec": 8.0892972946167,
+      "num_generated_tokens": 173,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:15"
+    },
+    {
+      "preset": "formula_friendly",
+      "prompt": "Transcribe math as LaTeX when clear; keep original text for body.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 1024,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3,
+        "length_penalty": 1.0
+      },
+      "output_text": "Transcribe math as LaTeX when clear; keep original text for body. Eisenschlos et al. (2020) Liu et (2021) Et al. (2020) Eisenschlos at. (2021) Lin et al . (202) TA TA TA BA BA BAE inter TABLEFORMERLARGE TA TA PA BA BABE inter TAPAS TA PA TA TA PAS . . 66. .2 .",
+      "output_json": {
+        "text_sequence": "Eisenschlos et al. (2020) Liu et (2021) Et al. (2020) Eisenschlos at. (2021) Lin et al . (202) TA TA TA BA BA BAE inter TABLEFORMERLARGE TA TA PA BA BABE inter TAPAS TA PA TA TA PAS . .<unk> 66.<unk> .2 .</s>"
+      },
+      "runtime_sec": 3.4410905838012695,
+      "num_generated_tokens": 95,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:19"
+    },
+    {
+      "preset": "table_markdown",
+      "prompt": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 900,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "repetition_penalty": 1.05,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "If tables are present, render them as GitHub-flavored Markdown; otherwise read text. or it it is in al. (20) Elsenschlos et al. ( ) Liu et al (2021) 67.2 71.0 0 0 0 | - !?!?! ????! (?)?!!?! L 7 / 1 I S E TABASASBASK ORMERBE inter REPEARLE ut al. (1921) (2015) 2015 11 10 20) of at alset al. anter let after EXPt itter (046 (21) Inter TABERBASE infer infer for meter only enter not all of the older to perfor er PERFERRE inter inter inter 35 inter inter",
+      "output_json": {
+        "text_sequence": "or it it is in al. (20) Elsenschlos et al. ( ) Liu et al (2021) 67.2 71.0 0 0 0 | - !?!?! ????! (?)?!!?! L 7 / 1 I S E TABASASBASK ORMERBE inter REPEARLE ut al. (1921) (2015) 2015 11 10 20) of at alset al.<unk> anter let after EXPt itter (046 (21) Inter TABERBASE infer infer for meter only enter not all of the older to perfor er PERFERRE inter inter inter 35 inter inter</s>"
+      },
+      "runtime_sec": 6.0236289501190186,
+      "num_generated_tokens": 158,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:25"
+    },
+    {
+      "preset": "page_summary",
+      "prompt": "Provide a concise one-sentence summary of the page content.",
+      "image_processor_overrides": {},
+      "generation_kwargs": {
+        "max_new_tokens": 64,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.8,
+        "top_p": 0.92
+      },
+      "output_text": "Provide a concise one-sentence summary of the page content. et al. (2020) Eisenschlos et al. (2020) Eisenschlos et al. (2020) Liu et al. (202) A A B E Eisenschlos et al. (20)))))))))))))))))))))",
+      "output_json": {
+        "text_sequence": "et al. (2020) Eisenschlos et al. (2020) Eisenschlos et al. (2020) Liu et al. (202) A A B E Eisenschlos et al. (20)))))))))))))))))))))</s>"
+      },
+      "runtime_sec": 6.485886573791504,
+      "num_generated_tokens": 80,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:31"
+    },
+    {
+      "preset": "universal_doc",
+      "prompt": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1000,
+        "num_beams": 4,
+        "do_sample": false,
+        "early_stopping": true,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Analyze the page image and output STRICT JSON with keys: {\"page_type\": [\"table\"|\"equation\"|\"figure\"|\"text\"|\"mixed\"], \"tables_md\": [], \"equations_latex\": [], \"caption\": \"\", \"text\": \"\"}. Rules: 1) If the page is predominantly a TABLE and small enough, transcribe it exactly as GitHub-Flavored Markdown into tables_md. 2) If the page is predominantly EQUATIONS with little body text, transcribe equations into equations_latex (LaTeX). 3) If the layout is MIXED or too large to reproduce, do NOT hallucinate; return a short caption and key body text; keep tables_md/equations_latex empty. Always return valid JSON and no text outside JSON.WWWWWWWWW.PoPoPoPoPerPerSoSoSoSoBeBeBeBePaPaPaPaPoPoPoSoSoSoPoPoPoDoDoBeBeBeSoSoSoGeGeGeGeSoSoSoToToToToBeBeBePoPoPoBeBeBeGeGeGeBeBeBeReBeBeBeB.SoSoSoSeSeSeSoSoSoReReReRePoPoPoDeBeBeBeMeMeMeMeBeBeBeE .PoPoP-PoPoPoMoMoMoMoSoSoSoffeffeffeffeGeGeGePoPoPoMeMeMePoPoPoReReReBeBeBoddoddoddoddPoPoPoP.PoPoDoPoPoPoGeGeGeHeHeHeHeBeBeBeInInInInBeBeBeMoMoMoPoPoPoS.PoPoBeSoSoGeBeBeB-PoPoMe,PoPoPoPorPorPorPorPoPoPoffeffee,PoPoDoBeBeGeSoSoffee,SoSoSome,PoPoffee-PoPoffe,PoPoMoGeGeGeStatStatStatStateGeGeGeMoMoMoToToToPoPoPoRTBeBeBeBiBiBiBiBeBeBe (PoPoPokeSoSoSo Anal Anal Anal Analmetrimetrimetrimetrimetrmetrmetr Anal Anal Analmetrmetrmetrmetr An An An An Anal Anal Analysis Anal Anal AnalySoSoSo Error Error Error Error/PoPoPoR 0.0 0.05 0.SoSome Anal Anal Anal",
+      "output_json": {
+        "text_sequence": "WWWWWWWWW.PoPoPoPoPerPerSoSoSoSoBeBeBeBePaPaPaPaPoPoPoSoSoSoPoPoPoDoDoBeBeBeSoSoSoGeGeGeGeSoSoSoToToToToBeBeBePoPoPoBeBeBeGeGeGeBeBeBeReBeBeBeB.SoSoSoSeSeSeSoSoSoReReReRePoPoPoDeBeBeBeMeMeMeMeBeBeBeE .PoPoP-PoPoPoMoMoMoMoSoSoSoffeffeffeffeGeGeGePoPoPoMeMeMePoPoPoReReReBeBeBoddoddoddoddPoPoPoP.PoPoDoPoPoPoGeGeGeHeHeHeHeBeBeBeInInInInBeBeBeMoMoMoPoPoPoS.PoPoBeSoSoGeBeBeB-PoPoMe,PoPoPoPorPorPorPorPoPoPoffeffee,PoPoDoBeBeGeSoSoffee,SoSoSome,PoPoffee-PoPoffe,PoPoMoGeGeGeStatStatStatStateGeGeGeMoMoMoToToToPoPoPoRTBeBeBeBiBiBiBiBeBeBe (PoPoPokeSoSoSo Anal Anal Anal Analmetrimetrimetrimetrimetrmetrmetr Anal Anal Analmetrmetrmetrmetr An An An An Anal Anal Analysis Anal Anal AnalySoSoSo Error Error Error Error/PoPoPoR 0.0 0.05 0.SoSome Anal Anal Anal</s>"
+      },
+      "runtime_sec": 4.0006890296936035,
+      "num_generated_tokens": 554,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:35"
+    },
+    {
+      "preset": "router_probe",
+      "prompt": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool,  \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\",  \"table_size\": \"none|small|large\", \"confidence\": number}.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 48,
+        "num_beams": 1,
+        "do_sample": false,
+        "early_stopping": true
+      },
+      "output_text": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) (",
+      "output_json": {
+        "text_sequence": "Classify the page layout. Output STRICT JSON ONLY with keys: {\"is_table\": bool, \"is_equation\": bool, \"is_figure\": bool, \"is_text\": bool, \"dominant\": \"table|equation|figure|text|mixed\", \"table_size\": \"none|small|large\", \"confidence\": number}. ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) ( ) (</s>"
+      },
+      "runtime_sec": 0.37752413749694824,
+      "num_generated_tokens": 154,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:36"
+    },
+    {
+      "preset": "eq_compact",
+      "prompt": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1024,
+          "width": 768
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 160,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 2,
+        "repetition_penalty": 1.2,
+        "early_stopping": true
+      },
+      "output_text": "Transcribe visible equations using LaTeX; keep inline math inline; do not invent symbols. et al. (2020) .0 0. 66.7 70.3 67.5 6 1 1 7 1 0 1 2 1 4 1 3 1 5 1 % 70,6.8 70 70:4 70 60.4 4 61.1 1 61.6, 70 : 70 0 0,.9.",
+      "output_json": {
+        "text_sequence": "et al. (2020) .0 0.<unk> 66.7 70.3 67.5 6 1 1 7 1 0 1 2 1 4 1 3 1 5 1 % 70,6.8 70 70:4 70 60.4 4 61.1 1 61.6, 70 : 70 0 0,<unk>.9.</s>"
+      },
+      "runtime_sec": 0.5543217658996582,
+      "num_generated_tokens": 93,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:36"
+    },
+    {
+      "preset": "table_strict_md",
+      "prompt": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1440,
+          "width": 1024
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 480,
+        "num_beams": 4,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.1,
+        "length_penalty": 1.0
+      },
+      "output_text": "Extract all tables as GitHub-Flavored Markdown. Preserve headers, numbers, and punctuation exactly. Do not summarize. Herzie et al. 2020) Eisenschlos et al. (1920) et al. (2020) Herzig et et al. et (2021) et et et et at al. et al. 2021) et et at at al. (2021) Herzie et et et al et et at (2021) et at at et et et (2021) Herzig et at et et at et at at at (2021) (2020) et et et (2020) (2020) 2021) (2012. (2021) ( ) (2020) 67. (2012) (20121) (2020) 0. (2020 ) (20121) . (20121) 67. (2020. (20201) (20121) 0 71. (2021) . (20021) (2020 ) 0 71. (2012. ( ) (2012) 67. (2021) 67. (2021) (20201) - - - - 61. (201211 . ( ) 67. ( 2021) 67. (192021) 67. (1021) 67. 0 71. (1021) - - - 0 71. 0 0 71. (1. ( ) - - - 1 61. ( ) 61. (2020 . 0 0 61. ( 0 71. (21) 67. 0 61. 0. ( ) . () 67. (10. ( ) 40. ( ) 60. ( ) 66. ( ) 0 0 0 0 71 0 0 0 11.0 0 0 0. 0 0 0 . 0. 0 . . 0 , 0 0 , . , 0 . ( 0 . TA TA TA TA B . 0",
+      "output_json": {
+        "text_sequence": "Herzie et al. 2020) Eisenschlos et al. (1920) et al. (2020) Herzig et et al. et (2021) et et et et at al. et al. 2021) et et at at al. (2021) Herzie et et et al et et at (2021) et at at et et et (2021) Herzig et at et et at et at at at (2021) (2020) et et et (2020) (2020) 2021) (2012. (2021) ( ) (2020) 67. (2012) (20121) (2020) 0. (2020 ) (20121) . (20121) 67. (2020. (20201) (20121) 0 71. (2021) . (20021) (2020 ) 0 71. (2012. ( ) (2012) 67. (2021) 67. (2021) (20201) - - - - 61. (201211 . ( ) 67. ( 2021) 67. (192021) 67. (1021) 67. 0 71. (1021) - - - 0 71. 0 0 71. (1. ( ) - - - 1 61. ( ) 61. (2020 . 0 0 61. ( 0 71. (21) 67. 0 61. 0. ( ) . () 67. (10. ( ) 40. ( ) 60. ( ) 66. ( ) 0 0 0 0 71 0 0 0 11.0 0 0 0. 0 0 0 . 0. 0 . . 0 , 0 0 , . , 0 . ( 0 . TA TA TA TA B . 0</s>"
+      },
+      "runtime_sec": 2.6437361240386963,
+      "num_generated_tokens": 370,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:39"
+    },
+    {
+      "preset": "wide_table_md",
+      "prompt": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1600,
+          "width": 1130
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 1400,
+        "num_beams": 3,
+        "do_sample": false,
+        "no_repeat_ngram_size": 4,
+        "repetition_penalty": 1.12,
+        "early_stopping": false
+      },
+      "output_text": "If the table is wide, split into multiple Markdown tables by logical sections. Preserve header rows; avoid wrapping cell content. et al. 2020) Liu et al. (2021) Herzig et al. (2020) Eisenschlos et al. et (2020) al. (2021) et (2021) (2020) et et (2021) (2021) 202) (2021) Hisenschlos et et et et at (2021) et al.(2020) (2021) et et at at. (2021) et at at (2021) ent et et et al.2020) et at at at at et at at et et at et et etet at at at At At (2021) er et et et onmerBASE et et at At At At At at at at Et Et Et Et at at at ElforMERBASE int et at at At at at At et et et Et Et Et EfforMERBSE int et et atet et et at EforMERBE inter at at at EforMerBSE in ter at at atet et at at E for et et et At At At EforMERBASE at at at not et et et EfforMERBE int at at at all. Et Et Et At At At Effor et at at Et At At at At At Ist at at at List List List List et at at al.at at at at of at at at any at at at set at at atat at at allot at at at Allot at at At al. USERBASE Befor et al. USIBESE at at allon MBEASE Befor at at at ast at at at use at at at as set at at allos et al. Asklos et at at all as at at at you may may may may be at at at alonMERBASE et alonMERBASE et al as you may may not you you you you to you you you<sep/><sep/><sep/><sep/> Before Perturb efore",
+      "output_json": {
+        "text_sequence": "et al. 2020) Liu et al. (2021) Herzig et al. (2020) Eisenschlos et al. et (2020) al. (2021) et (2021) (2020) et et (2021) (2021) 202) (2021) Hisenschlos et et et et at (2021) et al.(2020) (2021) et et at at. (2021) et at at (2021) ent et et et al.2020) et at at at at et at at et et at et et etet at at at At At (2021) er et et et onmerBASE et et at At At At At at at at Et Et Et Et at at at ElforMERBASE int et at at At at at At et et et Et Et Et EfforMERBSE int et et atet et et at EforMERBE inter at at at EforMerBSE in ter at at atet et at at E for et et et At At At EforMERBASE at at at not et et et EfforMERBE int at at at all. Et Et Et At At At Effor et at at Et At At at At At Ist at at at List List List List et at at al.at at at at of at at at any at at at set at at atat at at allot at at at Allot at at At al. USERBASE Befor et al. USIBESE at at allon MBEASE Befor at at at ast at at at use at at at as set at at allos et al. Asklos et at at all as at at at you may may may may be at at at alonMERBASE et alonMERBASE et al as you may may not you you you you to you you you<sep/><sep/><sep/><sep/> Before Perturb efore</s>"
+      },
+      "runtime_sec": 3.9938156604766846,
+      "num_generated_tokens": 422,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:43"
+    },
+    {
+      "preset": "figure_bullets",
+      "prompt": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values.",
+      "image_processor_overrides": {
+        "size": {
+          "height": 1280,
+          "width": 960
+        }
+      },
+      "generation_kwargs": {
+        "max_new_tokens": 180,
+        "num_beams": 1,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.9
+      },
+      "output_text": "Summarize the figure with up to 5 bullet points: (1) key entities, (2) relationships, (3) notable labels/values. et al. (2020) Hisenschos et al. (2020) Liu et al. (202). Eisensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensen.28.18.Perfe:5.Bessesssessses.Dependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependepende",
+      "output_json": {
+        "text_sequence": "et al. (2020) Hisenschos et al. (2020) Liu et al. (202). Eisensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensensen.28.18.Perfe:5.Bessesssessses.Dependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependependepende</s>"
+      },
+      "runtime_sec": 1.1490859985351562,
+      "num_generated_tokens": 210,
+      "error": null,
+      "timestamp": "2025-08-20 06:47:44"
+    }
+  ],
+  "presets_run": [
+    "balanced_beam",
+    "eq_compact",
+    "fast_draft",
+    "figure_bullets",
+    "formula_friendly",
+    "long_page_strict",
+    "page_summary",
+    "router_probe",
+    "table_markdown",
+    "table_strict_md",
+    "universal_doc",
+    "wide_table_md"
+  ]
+}

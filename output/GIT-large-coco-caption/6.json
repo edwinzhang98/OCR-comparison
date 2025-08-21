@@ -1,0 +1,84 @@
+{
+  "image": "data/pdf_ocr_samples/6.jpg",
+  "image_name": "6.jpg",
+  "total_processing_time": 1.7487428188323975,
+  "presets_tested": 5,
+  "mode": "caption",
+  "results": [
+    {
+      "preset": "chart_analysis",
+      "prompt": "Analyze this chart or scientific diagram in detail. Describe axes, labels, units, legends, trends, and embedded text. Be comprehensive and accurate.",
+      "generation_kwargs": {
+        "max_new_tokens": 180,
+        "do_sample": true,
+        "temperature": 0.6,
+        "top_p": 0.9,
+        "repetition_penalty": 1.15,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "the text in the picture is a rectangle and the rest of the image is a square.",
+      "inference_time": 0.4851195812225342,
+      "total_tokens": 21
+    },
+    {
+      "preset": "technical_description",
+      "prompt": "Provide a technical description. Identify text, numbers, symbols, axes ranges, and structural elements. Be precise and systematic.",
+      "generation_kwargs": {
+        "max_new_tokens": 140,
+        "do_sample": false,
+        "num_beams": 4,
+        "length_penalty": 1.1,
+        "repetition_penalty": 1.2,
+        "early_stopping": true
+      },
+      "output_text": "the number of people in the united states.",
+      "inference_time": 0.25841712951660156,
+      "total_tokens": 11
+    },
+    {
+      "preset": "comprehensive_caption",
+      "prompt": "Create a comprehensive caption suitable for academic documentation. Include visible text, chart elements, data patterns, and context.",
+      "generation_kwargs": {
+        "max_new_tokens": 220,
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 0.95,
+        "repetition_penalty": 1.25,
+        "no_repeat_ngram_size": 4
+      },
+      "output_text": "the text of the chart says, ` ` all lines have different variations in them. ' '",
+      "inference_time": 0.4160928726196289,
+      "total_tokens": 21
+    },
+    {
+      "preset": "structured_analysis",
+      "prompt": "Structured analysis: (1) main elements, (2) text/labels, (3) data patterns/trends, (4) overall purpose.",
+      "generation_kwargs": {
+        "max_new_tokens": 160,
+        "do_sample": true,
+        "temperature": 0.65,
+        "top_p": 0.9,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 3
+      },
+      "output_text": "the number of students is in the chart.",
+      "inference_time": 0.2038559913635254,
+      "total_tokens": 11
+    },
+    {
+      "preset": "precision_focused",
+      "prompt": "Describe with high precision. Focus on exact text, numbers, symbols, and spatial relations. Avoid speculation; only observable facts.",
+      "generation_kwargs": {
+        "max_new_tokens": 120,
+        "do_sample": false,
+        "num_beams": 5,
+        "length_penalty": 1.2,
+        "repetition_penalty": 1.25,
+        "early_stopping": true
+      },
+      "output_text": "a line of text that reads, ` ` [ unused0 ] ' '.",
+      "inference_time": 0.3852572441101074,
+      "total_tokens": 18
+    }
+  ]
+}
